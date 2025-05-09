@@ -6,9 +6,12 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 
 }
- 
+ .top{
+  margin-top: 40px;
+}
 .navtext{
     margin-top: 150px;
     margin-left: 80px;
@@ -256,7 +259,7 @@ section.bg-primary {
 }
 
 .back {
-  background-image: url(../PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
+  background-image: url(/IT-Portfolio/PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
   background-position: center;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.842); */
@@ -264,8 +267,10 @@ section.bg-primary {
 
 /* Ruchita Section Start */
 .background {
-  background-image: url(/PUBLIC/rm378-05.jpg);
-
+  background-image: url(/IT-Portfolio/PUBLIC/team1.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 
 }
 
@@ -391,15 +396,16 @@ section.bg-primary {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 230px;
+  padding-bottom: 200px;
+  margin-top: 110px;
   font-size: 180px;
   background-attachment: fixed;
-  /* animation: bgScroll 10s linear infinite; */
+  animation: bgScroll 10s linear infinite;
 }
 
 .contact-text {
   color: white;
-  font-size: 150px;
+  font-size: 120px;
   margin: 0;
   opacity: 0;
   animation: fadeIn 5s ease-in forwards;
