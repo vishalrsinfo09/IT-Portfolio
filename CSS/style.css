@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 
 }
  
@@ -264,7 +265,10 @@ section.bg-primary {
 
 /* Ruchita Section Start */
 .background {
-  background-image: url(/PUBLIC/rm378-05.jpg);
+  background-image: url(/PUBLIC/development-with-abstract-background.jpg);
+  background-position: center;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 
 
 }
@@ -312,8 +316,9 @@ section.bg-primary {
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, rgba(35, 49, 66, 0.9), rgba(102, 16, 242, 0.8));
-  color: white;
+  /* background: linear-gradient(135deg, rgba(35, 49, 66, 0.9), rgba(102, 16, 242, 0.8)); */
+  background-color: #6c757d;
+  color: black;
   transform: rotateY(180deg);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -378,6 +383,7 @@ section.bg-primary {
   color: #d1d1e0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+
 
 /* Ruchita Section End */
 
@@ -474,12 +480,13 @@ section.bg-primary {
 }
 
 footer {
-  background-image: url(/IT-Portfolio/PUBLIC/footerimg.jpg);
+  background-image: url(/PUBLIC/footerimg.jpg);
+  /* background-color: #05072e ; */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: black */
   padding: 40px 20px;
-  color: white;
+  background-color: linear-gradient(to right, #070b3b, #1a1d63);
 }
 
 .footer-main {
