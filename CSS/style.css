@@ -1,6 +1,5 @@
-
 /* service section */
-.nav{
+.nav {
   overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -8,145 +7,159 @@
   width: 100%;
 
 }
- 
-.navtext{
-    margin-top: 150px;
-    margin-left: 80px;
+
+.navtext {
+  margin-top: 150px;
+  margin-left: 80px;
 }
 
 .nav-item:hover {
 
-    padding-left: 200px;
-    padding-right: 200px;
-    color:#8ebf4a;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: #8ebf4a;
 }
 
-.shadow{
-   box-shadow: 10px 10px 5px 0px rgba(242, 239, 239, 0.75);
+.shadow {
+  box-shadow: 10px 10px 5px 0px rgba(242, 239, 239, 0.75);
 }
-.button{
+
+.button {
   border: 2px solid black;
-  margin-top: 35px;
+  margin-top: 35px; 
   margin-bottom: 35px;
   margin-right: 200px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #20223a,#8ebf4a);
+  background: linear-gradient(135deg, #20223a, #8ebf4a);
 }
 
-:root{
-    --primery-color:white;
-    --secondary-color:rgba(255, 255, 255, 0.447);
-}
-#service-section{
-    min-height:740px;
-    width:100%;
-    background:#20223a;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
+:root {
+  --primery-color: white;
+  --secondary-color: rgba(255, 255, 255, 0.447);
 }
 
-#service-section h2{
- color:white;
- font-size: 2rem;
- margin-bottom: 20px;
- position:relative;
+#service-section {
+  min-height: 740px;
+  width: 100%;
+  background: #20223a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#service-section h2:after{
-  position:absolute;
-  content:"";
-  top:8px;
-  left:-30px;
-  height:0;  
-  width:0;
+
+#service-section h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#service-section h2:after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -30px;
+  height: 0;
+  width: 0;
   border-top: 20px solid transparent;
-  border-left:20px solid var(--primery-color);
+  border-left: 20px solid var(--primery-color);
 }
 
-#service-section h2:before{
-    position:absolute;
-    content:"";
-    top:8px;
-    right:-30px;
-    height:0;  
-    width:0;
-    border-top: 20px solid transparent;
-    border-right:20px solid var(--primery-color);
-  }
-  #service-section #paragraph{
-    width:40%;
-    font-size: 1rem;
-    color:rgba(255,255,255,0.7);
-    text-align: center;
-    line-height:1.5rem;
-    white-space:1px;
-    margin-bottom:40px;
-    text-transform:uppercase;
-  }
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    z-index:9;
-    margin-top:20px;
-}
-.cards .card1{
-    height:350px;
-    width:450px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction:column;
-    padding:0 8%;
-    background:linear-gradient(135deg, rgb(35, 49, 66), rgb(103, 16, 242));
-    position:relative;
-    border-radius:10px; 
+#service-section h2:before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: -30px;
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid var(--primery-color);
 }
 
-.cards .card1::before{
-    position:absolute;
-    content:" ";
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    border-radius: 10px;
-    background:#8ebf4a;
-    transform:rotate(0deg);
-    z-index:-1;
+#service-section #paragraph {
+  width: 40%;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 1.5rem;
+  white-space: 1px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
-.cards .card1:hover.card1::before{
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.cards .card1 {
+  height: 350px;
+  width: 450px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 8%;
+  background: linear-gradient(135deg, rgb(35, 49, 66), rgb(103, 16, 242));
+  position: relative;
+  border-radius: 10px;
+}
+
+.cards .card1::before {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: #8ebf4a;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.cards .card1:hover.card1::before {
   transform: rotate(10deg);
   transition: 1s;
 }
-.cards .card1 i{
-    font-size:2.5rem;
-    color:var(--primery-color);
-    margin-top:40px;
-    margin-bottom:10px;
+
+.cards .card1 i {
+  font-size: 2.5rem;
+  color: var(--primery-color);
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
-.cards .card1 h3{
-    font-size: 1.8rem;
-    color:#fff;
-    margin-bottom:10px;
+
+.cards .card1 h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
 }
-.cards .card1 .content p{
-    color:rgba(255,255,255,0.5);
-    font-size:1.05rem;
-    margin-bottom:20px;
-    font-weight:500;
+
+.cards .card1 .content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
-@media(max-width:1100px){
-    #service-section h2{
-       margin-top:30px; 
-    }
-    .cards{
-        grid-template-columns: repeat(1,1fr);
-    }
-    #service-section #paragraph{
-        width:80%;
-    }
+
+@media(max-width:1100px) {
+  #service-section h2 {
+    margin-top: 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #service-section #paragraph {
+    width: 80%;
+  }
 }
+
 /* @media(max-width:900px){
     .cards .card{
       height:300px;  
@@ -262,9 +275,102 @@ section.bg-primary {
   /* background-color: rgba(0, 0, 0, 0.842); */
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fixed-size-img {
+  height: 250px;
+  /* You can adjust this value */
+  width: 100%;
+  object-fit: cover;
+}
+
+.about,
+.single {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f2f2f2;
+}
+
+.about .col-md-12,
+.about .col-md-6,
+.single .col-md-12,
+.single .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.about .about-img,
+.single .single-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about .about-img img,
+.single .single-img img {
+    width: 100%;
+}
+
+.about .about-content,
+.single .single-content {
+    position: relative;
+    width: 80%;
+    margin: -100px auto 0 auto;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.about .about-content h2,
+.single .single-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about .about-content p,
+.single .single-content p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.about .btn,
+.single .btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #999999;
+    border-radius: 0;
+}
+
+.about .btn:hover,
+.single .btn:hover {
+    background: #4F84C4;
+}
+
+
 /* Ruchita Section Start */
 .background {
-  background-image: url(/PUBLIC/rm378-05.jpg);
+  background-image: url(/PUBLIC/team.jpg);
+  background-size: cover;
+  background-position: center;
 
 
 }
@@ -305,7 +411,7 @@ section.bg-primary {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #b82727;
   color: black;
   /* border-radius: 20px; */
   overflow: hidden;
@@ -389,12 +495,12 @@ section.bg-primary {
   background-repeat: no-repeat;
   height: 59vh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  padding-bottom: 230px;
   font-size: 180px;
   background-attachment: fixed;
   animation: bgScroll 10s linear infinite;
+  filter: blur(1.5px);
 }
 
 .contact-text {
@@ -474,7 +580,7 @@ section.bg-primary {
 }
 
 footer {
-  background-image: url(/IT-Portfolio/PUBLIC/footerimg.jpg);
+  background-image: url(../PUBLIC/footerimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: black */
@@ -589,6 +695,7 @@ footer {
     transform: scale(1);
   }
 }
+
 .contact-box {
   animation: fadeInScale 0.20s ease-in-out forwards;
 }

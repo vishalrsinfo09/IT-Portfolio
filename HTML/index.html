@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RightServe IT Solutions</title>
+  <title>Right Serve Infotech Systems</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link
@@ -15,46 +15,83 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="../CSS/style.css" />
   <link rel="icon" type="image/x-icon" href="../PUBLIC/rsinfotechsys_logo-modified.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body onload="AOS.init()">
-  <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand text-white ms-5" href="#">
-          <img src="/PUBLIC/Company-logo-on-3d-glass-window-1536x864-removebg-preview.png" height="90" width="400"
-            alt="Company Logo">
-        </a>
-
-        <ul class="navbar-nav d-flex flex-row me-5">
-          <li class="nav-item px-3">
-            <a class="nav-link text-white" href="/HTML/index.html">HOME</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link text-white" href="/HTML/service.html">SERVICES</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link text-white" href="/HTML/team.html">TEAM</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link text-white" href="/HTML/contact.html">CONTACT US</a>
-          </li>
-        </ul>
-
-        <div class="me-4">
-          <a class="btn btn-outline-light" href="#">GET CONTACT</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
   <section id="home" class="video-bg position-relative">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <a class="navbar-brand text-white ms-5" href="#">
+            <img src="/PUBLIC/Company-logo-on-3d-glass-window-1536x864-removebg-preview.png" height="90" width="400"
+              alt="Company Logo">
+          </a>
+
+          <ul class="navbar-nav d-flex flex-row me-5">
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="/HTML/index.html">HOME</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="/HTML/service.html">SERVICES</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="/HTML/team.html">TEAM</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="/HTML/contact.html">CONTACT US</a>
+            </li>
+          </ul>
+
+          <div class=me-4>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#complaintModal">
+              Get Connect
+            </button>
+          </div>
+        </div>
+        <div class="modal fade" id="complaintModal" tabindex="-1" aria-labelledby="complaintModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="complaintModalLabel">Get Connect</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="complaint" class="form-label">Feedback</label>
+                    <textarea class="form-control" id="complaint" rows="4" placeholder="Describe your issue"
+                      required></textarea>
+                  </div>
+                  <button type="submit" class="same">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <video autoplay muted loop class="w-100">
       <source src="../PUBLIC/background.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <div class="video-content position-absolute pt-4 text-white"
-      data-aos="zoom-in">
+    <div class="video-content position-absolute pt-5 text-white" data-aos="zoom-in">
       <h1 class="display-4 fw-bold text-white">Welcome to Right Serve Infotech</h1>
       <p class="lead">Empowering Your Digital Vision</p>
       <a href="#about" class="btn btn-primary mt-3">Learn More</a>
@@ -116,6 +153,12 @@
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>
@@ -150,6 +193,199 @@
       </div>
     </div>
   </section>
+
+  <div class="about mt-100">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>
+          We design and develop custom software solutions tailored to your unique business needs, working closely with
+          you to understand your requirements and create functional, user-friendly applications that enhance your
+          operations.
+        </p>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="about-img">
+            <img src="../PUBLIC/workers-long-wooden-table.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="about-content">
+            <h2>Welcome to Our Site</h2>
+            <p>
+              Right Serve Infotech Systems Private Limited is a leading provider of comprehensive software and hardware
+              solutions, dedicated to empowering businesses across diverse industries.we've grown into a trusted name,
+              offering both custom-tailored and product-based solutions to meet the unique needs of our clients. With a
+              focus on innovation, quality, and customer satisfaction, we are committed to delivering reliable and
+              efficient technology solutions that drive growth and enhance operational efficiency.
+            </p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-img">
+            <img src="../PUBLIC/diverse-people-working-office.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="about-content">
+            <h2>We Offer High Quality Services</h2>
+            <p>
+
+              We specialize in a range of services, including software development, business solutions, mobile
+              application development, hardware solutions, desktop application development, digital marketing, and
+              customized software development.
+
+              Our commitment to quality ensures that each project is executed to the highest standards, delivering
+              exceptional results tailored to your specific needs.
+            </p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-img">
+            <img src="../PUBLIC/modern-equipped-computer-lab (1).jpg" alt="" class="img-fluid">
+          </div>
+          <div class="about-content">
+            <h2>Empowering Success Through Quality Solutions</h2>
+            <p>
+              Our mission is to be a leading provider of innovative software solutions and reliable hardware products,
+              tailored to meet diverse industry needs. We aim to enhance business efficiency through cutting-edge
+              technology, exceptional service, and a commitment to continuous improvement, ensuring our clients achieve
+              their goals with confidence and ease.
+
+              Together, we strive to unlock new opportunities and drive success for our clients, enabling them to
+              navigate their journeys with assurance and effectiveness.
+            </p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5" id="gallery">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="../PUBLIC/scroll (1).jpg" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal1">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="../PUBLIC/scroll (2).jpg" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal2">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="../PUBLIC/scroll (3).jpg" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="imageModal1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img src="../PUBLIC/scroll (1).jpg" class="img-fluid w-100 rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="imageModal2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img src="../PUBLIC/scroll (2).jpg" class="img-fluid w-100 rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="imageModal3" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img src="../PUBLIC/scroll (3).jpg" class="img-fluid w-100 rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="text-white bg-dark pt-5">
+    <div class="container footer-main d-flex flex-wrap justify-content-between">
+      <!-- <div class="footer-heading">
+                <b>LINK</b>
+                <ul class="list-unstyled">
+                    <li class="footer-subheading">RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.</li>
+                    <li class="footer-subheading"><img src="/IT-Portfolio/PUBLIC/RS-Info-logo.png" width="150" height="150"> </li>
+                    <li class="footer-subheading"></li>
+                </ul>
+            </div> -->
+      <div class="footer-heading">
+        <b>LINK</b>
+        <ul class="list-unstyled">
+          <li class="footer-subheading">Terms & Conditions</li>
+          <li class="footer-subheading">Contact</li>
+          <li class="footer-subheading">Success Story</li>
+        </ul>
+      </div>
+      <div class="footer-heading">
+        <b>OUR SERVICE</b>
+        <ul class="list-unstyled">
+          <li class="footer-subheading">Media</li>
+          <li class="footer-subheading">Performance</li>
+          <li class="footer-subheading">Content</li>
+        </ul>
+      </div>
+      <div class="footer-heading">
+        <b>OUR LOCATION</b>
+        <ul class="list-unstyled">
+          <li class="footer-subheading">
+            <i class="fa-solid fa-location-dot distance-icon"></i>
+            <span> 10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, <br>Saubhagya Nagar, Ghogali, Nagpur,
+              Maharashtra
+              440034</span>
+          </li>
+          <li class="footer-subheading">
+            <i class="fa-solid fa-phone distance-icon"></i> +91 7972192831
+          </li>
+          <li class="footer-subheading">
+            <i class="fa-solid fa-envelope distance-icon"></i> rightserveinfotechsystem@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-icons text-center mt-4">
+      <div class="followus-on">FOLLOW US ON -</div>
+      <div>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram mx-2" style="color: white"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook mx-2" style="color: white"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in mx-2" style="color: white"></i></a>
+        <a href="https://x.com/"><i class="fa-brands fa-twitter mx-2" style="color: white"></i></a>
+        <a href="https://www.google.com/"><i class="fa-brands fa-google mx-2" style="color: white"></i></a>
+      </div>
+    </div>
+    <hr>
+
+    <div class="footer-bottom text-center mt-3 pb-1">
+      <a href="https://rsinfotechsys.com/" class="text-white text-decoration-none">&copy; Copyright Right Serve
+        Infotech Private Limited 2025.</a>
+    </div>
+  </footer>
 
   <script src="../JS/script.js"></script>
 </body>
