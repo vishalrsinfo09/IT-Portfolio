@@ -402,7 +402,7 @@ section.bg-primary {
   padding-bottom: 230px;
   font-size: 180px;
   background-attachment: fixed;
-  animation: bgScroll 10s linear infinite;
+  /* animation: bgScroll 10s linear infinite; */
 }
 
 .contact-text {
