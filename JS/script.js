@@ -1,18 +1,23 @@
-function animateCounter(id, target, speed) {
+function animateCounter(id, target) {
     let count = 0;
-    const counter = document.getElementById(id);
-    const stepTime = Math.floor(speed / target);
-
     const interval = setInterval(() => {
+        if (count >= target) {
+            clearInterval(interval);
+            return;
+        }
         count++;
-        counter.innerText = count;
-        if (count >= target) clearInterval(interval);
-    }, stepTime);
+        document.getElementById(id).innerText = count;
+    }, 20);
 }
 
-animateCounter("count1", 50, 2400);
-animateCounter("count2", 20, 2500);
-animateCounter("count3", 500, 900);
+window.onload = () => {
+    AOS.init();
+    animateCounter("count1", 120);
+    animateCounter("count2", 50);
+    animateCounter("count3", 150);
+};
+
+
 
 function data() {
     var name = document.getElementById("name").value;
