@@ -12,7 +12,7 @@ function animateCounter(id, target, speed) {
 
 animateCounter("count1", 50, 2400);
 animateCounter("count2", 20, 2500);
-animateCounter("count3", 500, 900); 
+animateCounter("count3", 500, 900);
 
 function data() {
     var name = document.getElementById("name").value;
@@ -31,4 +31,4 @@ function data() {
         return true;
     }
 }
- AOS.init();
+AOS.init();
