@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: #333;
   position: fixed;
+  z-index:1;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -16,9 +17,6 @@
 }
 
 .nav-item:hover {
-
-    padding-left: 200px;
-    padding-right: 200px;
     color:#8ebf4a;
 }
 
@@ -489,6 +487,9 @@ footer {
   background-color: linear-gradient(to right, #070b3b, #1a1d63);
 }
 
+.top{
+  margin-top: 40px;
+}
 .footer-main {
   display: flex;
   flex-wrap: wrap;
