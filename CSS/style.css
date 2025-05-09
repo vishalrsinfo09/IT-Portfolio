@@ -263,7 +263,7 @@ section.bg-primary {
   transition: color 0.3s ease;
 }
 
-.back{
+.back {
   background-image: url(../PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
   background-position: center;
   background-size: cover;
@@ -271,9 +271,9 @@ section.bg-primary {
 }
 
 /* Ruchita Section Start */
-.background{
+.background {
   background-image: url(/PUBLIC/rm378-05.jpg);
-  
+
 
 }
 
@@ -283,7 +283,7 @@ section.bg-primary {
   height: 350px;
   perspective: 1000px;
   border-radius: 20px;
-  
+
 }
 
 .flip-card-inner {
@@ -309,7 +309,7 @@ section.bg-primary {
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 .flip-card-front {
@@ -320,7 +320,7 @@ section.bg-primary {
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, rgba(35,49,66,0.9), rgba(102,16,242,0.8));
+  background: linear-gradient(135deg, rgba(35, 49, 66, 0.9), rgba(102, 16, 242, 0.8));
   color: white;
   transform: rotateY(180deg);
   backdrop-filter: blur(5px);
@@ -339,7 +339,7 @@ section.bg-primary {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  
+
 }
 
 .profile-img {
@@ -371,227 +371,232 @@ section.bg-primary {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
+
 .text-dark-title {
-  color: #3c3c3c; 
+  color: #3c3c3c;
   font-weight: 500;
 }
-.text_style{
-  color: #f8f9fa; 
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+
+.text_style {
+  color: #f8f9fa;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
-.text_style_shadow{
-  color: #d1d1e0; 
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+
+.text_style_shadow {
+  color: #d1d1e0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+
 /* Ruchita Section End */
 
 /* kalyani start */
 .background-image {
-    background-image: url(../PUBLIC/bg-contact.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 59vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 230px;
-    font-size: 180px;
-    background-attachment: fixed;
-    animation: bgScroll 10s linear infinite;
+  background-image: url(../PUBLIC/bg-contact.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 59vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 230px;
+  font-size: 180px;
+  background-attachment: fixed;
+  animation: bgScroll 10s linear infinite;
 }
 
 .contact-text {
-    color: white;
-    font-size: 150px;
-    margin: 0;
-    opacity: 0;
-    animation: fadeIn 5s ease-in forwards;
+  color: white;
+  font-size: 150px;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 5s ease-in forwards;
 }
 
 
 .contact-box {
-    background-color: rgb(231, 231, 238);
-    max-width: 650px;
-    width: 100%;
-    height: auto;
-    border: 1px solid white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px 0px rgb(5, 5, 5);
-    margin: auto;
-    padding: 20px;
-      /* animation: fadeInScale 0.1s ease-in-out; */
-      transition: 5s;
+  background-color: rgb(231, 231, 238);
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgb(5, 5, 5);
+  margin: auto;
+  padding: 20px;
+  /* animation: fadeInScale 0.1s ease-in-out; */
+  transition: 5s;
 }
 
 .formheading-center {
-    text-align: center;
-    font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 
 
 .formcontrol {
-    width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-left: 15px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .formcontroltextarea {
-    height: 150px;
-     width: 100%;
-    /* height: 50px; */
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-left: 15px;
-    box-sizing: border-box;
+  height: 150px;
+  width: 100%;
+  /* height: 50px; */
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .iconimage {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: #1b3869;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #1b3869;
 }
 
 .s-button {
-    display: block;
-    margin: 20px auto;
-    width: 200px;
-    height: 50px;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
 }
 
 .contact-map {
-    /* max-width: 600px; */
-    width: 100%;
-    height: 480px;
-    margin: auto;
-    /* border: 1px solid white; */
-    box-shadow: 0px 0px 1px 0px rgb(5, 5, 5);
-    object-fit: cover;
-    background-size: contain;
-     animation: bgScroll 10s linear infinite;
+  /* max-width: 600px; */
+  width: 100%;
+  height: 480px;
+  margin: auto;
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 1px 0px rgb(5, 5, 5);
+  object-fit: cover;
+  background-size: contain;
+  animation: bgScroll 10s linear infinite;
 }
 
 footer {
-    background-image: url(/IT-Portfolio/PUBLIC/footerimg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: black */
-    padding: 40px 20px;
-    color: white;
+  background-image: url(/IT-Portfolio/PUBLIC/footerimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: black */
+  padding: 40px 20px;
+  color: white;
 }
 
 .footer-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 .footer-heading {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-subheading {
-    list-style: none;
-    font-size: 20px;
-    padding-top: 10px;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 10px;
 }
-.distance-icon{
-    margin-right: 20px;
-    color: white;
+
+.distance-icon {
+  margin-right: 20px;
+  color: white;
 }
 
 .footer-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .followus-on {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: whitesmoke;
 }
 
 .footer-icons a {
-    text-decoration: none;
-    margin: 0 10px;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .footer-icons a i {
-    font-size: 1.8rem;
-    color: white;
-    transition: color 0.3s ease;
+  font-size: 1.8rem;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .footer-icons a:hover i {
-    color: #ccc;
+  color: #ccc;
 }
 
 .footer-bottom {
-    /* background-color: #111; */
-    text-align: center;
-    padding: 20px;
+  /* background-color: #111; */
+  text-align: center;
+  padding: 20px;
 }
 
 .footer-bottom a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
 
-     
-    @keyframes fadeIn {
-        to {
-          opacity: 1;
-        }
-      }
-    .contact-box,
-    .contact-map {
-        max-width: 90%;
-        height: auto;
-    }
 
-    .formcontrol,
-    .formcontroltextarea{
-        margin-left: 0;
-        width: 100%;
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
     }
+  }
 
-    .footer-main {
-        flex-direction: column;
-        align-items: center;
-    }
+  .contact-box,
+  .contact-map {
+    max-width: 90%;
+    height: auto;
+  }
 
-    .btn {
-        width: 100%;
-        max-width: 300px;
-    } 
+  .formcontrol,
+  .formcontroltextarea {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 @keyframes fadeInScale {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .contact-box {
-    animation: fadeInScale 0.20s ease-in-out forwards;
+  animation: fadeInScale 0.20s ease-in-out forwards;
 }
-
- /* kalyani end */
