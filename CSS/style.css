@@ -222,7 +222,7 @@ section.bg-primary {
 }
 /* Ruchita Section End */
 
-
+/* kalyani start */
 .background-image {
     background-image: url(../PUBLIC/bg-contact.png);
     background-size: cover;
@@ -427,7 +427,8 @@ footer {
         transform: scale(1);
     }
 }
-
 .contact-box {
     animation: fadeInScale 0.20s ease-in-out forwards;
 }
+
+ /* kalyani end */
