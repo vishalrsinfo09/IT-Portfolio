@@ -32,15 +32,7 @@
   border-radius: 10px;
   background: linear-gradient(135deg, #20223a,#8ebf4a);
 }
-/* .gradient-btn {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    border: none;
-  }
 
-  .gradient-btn:hover {
-    opacity: 0.9;
-  } */
 :root{
     --primery-color:white;
     --secondary-color:rgba(255, 255, 255, 0.447);
@@ -99,7 +91,7 @@
     z-index:9;
     margin-top:20px;
 }
-.cards .card{
+.cards .card1{
     height:350px;
     width:450px;
     display: flex;
@@ -111,7 +103,7 @@
     border-radius:10px; 
 }
 
-.cards .card::before{
+.cards .card1::before{
     position:absolute;
     content:" ";
     height:100%;
@@ -123,22 +115,22 @@
     transform:rotate(0deg);
     z-index:-1;
 }
-.cards .card:hover.card::before{
+.cards .card1:hover.card1::before{
   transform: rotate(10deg);
   transition: 1s;
 }
-.cards .card i{
+.cards .card1 i{
     font-size:2.5rem;
     color:var(--primery-color);
     margin-top:40px;
     margin-bottom:10px;
 }
-.cards .card h3{
+.cards .card1 h3{
     font-size: 1.8rem;
     color:#fff;
     margin-bottom:10px;
 }
-.cards .card .content p{
+.cards .card1 .content p{
     color:rgba(255,255,255,0.5);
     font-size:1.05rem;
     margin-bottom:20px;
