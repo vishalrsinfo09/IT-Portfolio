@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IT-Portfolio-Website</title>
+    <link rel="stylesheet" href="/IT-Portfolio/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="/IT-Portfolio/JS/script.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Overpass:wght@900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-
-<style>
  
-    footer{
-        background-color: rgb(36, 33, 33);
-        background-image: url(/PUBLIC/footerimg.jpg);
-    }
-    .main{
-        width:100%;
-        padding:70px 30px 20px;
-        /* opacity:0.9; */
-    }
-
-    .social-icons{
-        display:flex;
-        justify-content: center;
-    }
-    .social-icons a{
-        text-decoration: none;
-        padding:10px;
-        background-color: white;
-        border-radius: 50%;
-        margin:10px;
-    }
-    .social-icons a i{
-        font-size:2em;
-        color:black;
-        /* opacity:0.9; */
-    }
-    .social-icons a:hover{
-        background:linear-gradient(to left,#064761,#1d8ab6);
-    }
-   
-
-    .nav{
-        margin:30px;
-    }
-    .nav ul{
-        display:flex;
-        justify-content: center;
-        list-style-type:none;
-    }
-    .nav ul li{
-        padding:10px;
-        }
-    .nav ul li a{
-            text-decoration: none;
-            color:white;
-            margin:10px;
-            font-size:20px;
-            opacity:9;
-            transition:0.5s;
-        }
-    .nav ul li a:hover{
-            opacity:8;
-        }
-     .footer-bottom{
-        background-color: #000;
-        padding:20px;
-      } 
-     .footer-bottom p{
-        color:white;
-        text-align:center;
-     }  
-</style>
 <body>
-   <footer>
-    <div class="main">
-     <div class="social-icons">
-     <a href=""><i class="fa-brands fa-instagram"></i></a>
-     <a href=""><i class="fa-brands fa-facebook"></i></a>
-     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-     <a href=""><i class="fa-brands fa-twitter"></i></i></a>
-     <a href=""><i class="fa-brands fa-google"></i></a>
-     </div>
+    <div class="background-image">
+        <h1 class="fw-bold text-center contact-text">CONTACT US</h1>
+    </div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-12 col-md-6">
+                <div class="contact-box"   data-aos="zoom-in">
+                     <form onsubmit="return data()" action="#">
+                        <h1 class="text-center">Get In Touch</h1><br>
 
-     <div class="nav">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Our Team</a></li>
-    </ul>
-     </div>
+                        <div class="mb-4 position-relative">
+                            <input type="text" name="name" placeholder="Enter your name" class="formcontrol"
+                                id="name" />
+                            <i class="fa-solid fa-user iconimage position-absolute" ></i>
+                        </div>
+
+                        <div class="mb-4 position-relative">
+                            <input type="email" name="email" placeholder="Enter your email" class="formcontrol"
+                                id="email" />
+                            <i class="fa-solid fa-envelope iconimage position-absolute"></i>
+                        </div>
+
+                        <div class="mb-4 position-relative">
+                            <input type="tel" name="phone" placeholder="Enter your phone number" class="formcontrol"
+                                id="phone" />
+                            <i class="fa-solid fa-phone iconimage position-absolute"></i>
+                        </div>
+
+                        <div class="mb-4">
+                            <textarea name="message" placeholder="Message" class="formcontroltextarea" id="address"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                    </form> 
+                 
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238129.63924507372!2d78.90769237692953!3d21.161326260270194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1746678453661!5m2!1sen!2sin"
+                        width="100%" height="600" style="border:0;" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy Copyright Right Serve Infotech Private Limited 2022.</p>
-     </div>
-   </footer> 
+    <footer class="text-white bg-dark pt-5">
+        <div class="container footer-main d-flex flex-wrap justify-content-between">
+           <!-- <div class="footer-heading">
+                <b>LINK</b>
+                <ul class="list-unstyled">
+                    <li class="footer-subheading">RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.</li>
+                    <li class="footer-subheading"><img src="/IT-Portfolio/PUBLIC/RS-Info-logo.png" width="150" height="150"> </li>
+                    <li class="footer-subheading"></li>
+                </ul>
+            </div> -->
+            <div class="footer-heading">
+                <b>LINK</b>
+                <ul class="list-unstyled">
+                    <li class="footer-subheading">Terms & Conditions</li>
+                    <li class="footer-subheading">Contact</li>
+                    <li class="footer-subheading">Success Story</li>
+                </ul>
+            </div>
+            <div class="footer-heading">
+                <b>OUR SERVICE</b>
+                <ul class="list-unstyled">
+                    <li class="footer-subheading">Media</li>
+                    <li class="footer-subheading">Performance</li>
+                    <li class="footer-subheading">Content</li>
+                </ul>
+            </div>
+            <div class="footer-heading">
+                <b>OUR LOCATION</b>
+                <ul class="list-unstyled">
+                    <li class="footer-subheading">
+                        <i class="fa-solid fa-location-dot distance-icon" ></i>
+                        <span > 10, Saurabh Nagar-2, Besa Rd, near Hanuman Mandir, <br>Saubhagya Nagar, Ghogali, Nagpur, Maharashtra
+                        440034</span>
+                    </li>
+                    <li class="footer-subheading">
+                        <i class="fa-solid fa-phone distance-icon" ></i> +91 7972192831
+                    </li>
+                    <li class="footer-subheading">
+                        <i class="fa-solid fa-envelope distance-icon" ></i> rightserveinfotechsystem@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-icons text-center mt-4">
+            <div class="followus-on">FOLLOW US ON -</div>
+            <div>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram mx-2"
+                        style="color: white"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook mx-2" style="color: white"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in mx-2"
+                        style="color: white"></i></a>
+                <a href="https://x.com/"><i class="fa-brands fa-twitter mx-2" style="color: white"></i></a>
+                <a href="https://www.google.com/"><i class="fa-brands fa-google mx-2" style="color: white"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="footer-bottom text-center mt-3 pb-1">
+            <a href="https://rsinfotechsys.com/" class="text-white text-decoration-none">&copy; Copyright Right Serve
+                Infotech Private Limited 2025.</a>
+        </div>
+    </footer>
 </body>
+
 </html>
