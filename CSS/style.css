@@ -267,11 +267,12 @@ section.bg-primary {
 
 /* Ruchita Section Start */
 .background {
-  background-image: url(/IT-Portfolio/PUBLIC/team1.jfif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(/IT-Portfolio/PUBLIC/team1.jfif); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   
 
+  
 }
 
 .flip-card {
