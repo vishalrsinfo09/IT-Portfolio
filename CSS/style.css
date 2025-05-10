@@ -9,10 +9,12 @@
   z-index: 1;
 
 }
-
-.navtext {
-  margin-top: 150px;
-  margin-left: 80px;
+ .top{
+  margin-top: 40px;
+}
+.navtext{
+    margin-top: 150px;
+    margin-left: 80px;
 }
 
 .nav-item:hover {
@@ -274,7 +276,7 @@ section.bg-primary {
 }
 
 .back {
-  background-image: url(../PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
+  background-image: url(/IT-Portfolio/PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
   background-position: center;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.842); */
@@ -508,6 +510,8 @@ section.bg-primary {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  padding-bottom: 200px;
+  margin-top: 110px;
   font-size: 180px;
   background-attachment: fixed;
   animation: bgScroll 10s linear infinite;
@@ -516,7 +520,7 @@ section.bg-primary {
 
 .contact-text {
   color: white;
-  font-size: 150px;
+  font-size: 120px;
   margin: 0;
   opacity: 0;
   animation: fadeIn 5s ease-in forwards;
