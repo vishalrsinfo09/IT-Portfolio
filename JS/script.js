@@ -13,8 +13,8 @@ function animateCounter(id, target) {
 window.onload = () => {
     AOS.init();
     animateCounter("count1", 120);
-    animateCounter("count2", 50);
-    animateCounter("count3", 150);
+    animateCounter("count2", 80);
+    animateCounter("count3", 250);
 };
 
 
@@ -37,3 +37,17 @@ function data() {
     }
 }
 AOS.init();
+
+
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-link-custom');
+
+navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    if (linkPath === currentPath) {
+        link.classList.add('active');
+    }
+});
+
+
+
