@@ -1,3 +1,4 @@
+/* Index file */
 .text-color{
   color: #00246b;
 }
@@ -28,7 +29,7 @@
     border: 5px solid rgb(3, 3, 51);
     background-color: #cadcfc;
     font-size: large;
-    border-radius: 30px;
+    border-radius: 20px;
     color:  rgb(3, 3, 51);
     width: 240px;
     height: 60px;
@@ -67,7 +68,7 @@ body {
 }
 .custom{
     margin-top: 80px;
-    border: 5px solid rgb(3, 3, 51);
+    border: 3px solid rgb(3, 3, 51);
     background-color: #90b0e2;;
     font-size: large;
     border-radius: 30px;
