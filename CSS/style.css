@@ -7,63 +7,57 @@
 
 }
 
-/* service page changes */
-* {
-  font-family: 'Playfair-Display', sans-serif;
-  scroll-behavior: smooth;
-}
-
-.service-text {
-  font-size: 50px;
-}
-
-.bg_color {
-  background-color: #cadcfc;
-}
-
-.text-color {
-  color: #00246b;
-}
-
-.card-bg-color {
-  background-color: #00246b;
-}
-
-.custom {
-  margin-top: 80px;
-  border: 5px solid rgb(3, 3, 51);
-  background-color: #cadcfc;
-  font-size: large;
-  border-radius: 30px;
-  color: rgb(3, 3, 51);
-  width: 240px;
-  height: 60px;
-}
-
-
-
-
-/* .service-main-heading{
-  font-size: 50px;
- }
- .image-service{
-  
- } */
-
-
-
-body {
+ /* service page changes */
+  * {
   font-family: 'Playfair Display', sans-serif;
-  scroll-behavior: smooth;
-  color: #00246b;
-}
+    scroll-behavior: smooth;
+    }
+    body{
+      background-color:  #90b0e2;
+    }
+    .service-text{
+      font-size: 90px;
+      font-weight: bolder;
+    }
+    
+    .bg_color{
+      background-color:  #90b0e2;;
+    }
+  
+   .style{
+    background-color: #00246b;
+    color:  #90b0e2;;
+   }
+   .custom{
+    margin-top: 80px;
+    border: 5px solid rgb(3, 3, 51);
+    background-color: #90b0e2;;
+    font-size: large;
+    border-radius: 30px;
+    color:  rgb(3, 3, 51);
+    width: 240px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9px;
+   }
+   .custom:active{
+    border-color: #b82727;
+    color: #b82727;
+   }
+    .custom-btn{
+    margin-top: 50px;
+    /* border: 5px solid rgb(3, 3, 51); */
+    background-color: #90b0e2;
+    font-size: large;
+    border-radius: 30px;
+    color:  rgb(3, 3, 51);
+    width: 240px;
+    height: 60px;
+   }
+   
+   /* Ruchita Section Start */
 
-.bg_color {
-  background-color: #cadcfc;
-}
-
-/* 
-/* Ruchita Section Start */
 
 .flip-card {
   background-color: transparent;
@@ -123,10 +117,12 @@ body {
 .flip-card-front {
   /* background-color: #cdda1c; */
   color: black;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
 .flip-card-back {
+  /* background: linear-gradient(135deg, rgba(35, 49, 66, 0.9), rgba(102, 16, 242, 0.8)); */
   background-color: #6c757d;
   color: black;
   transform: rotateY(180deg);
