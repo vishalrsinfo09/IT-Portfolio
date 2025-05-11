@@ -17,8 +17,6 @@ window.onload = () => {
     animateCounter("count3", 250);
 };
 
-
-
 function data() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -38,15 +36,15 @@ function data() {
 }
 AOS.init();
 
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    console.log("Current Path:", currentPath);
 
-const currentPath = window.location.pathname;
-const navLinks = document.querySelectorAll('.nav-link-custom');
-
-navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-    if (linkPath === currentPath) {
-        link.classList.add('active');
-    }
+    document.querySelectorAll(".nav-link-custom").forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
 });
 
 
