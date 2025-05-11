@@ -1,3 +1,10 @@
+.text-color{
+  color: #00246b;
+}
+.card-bg-color{
+  background-color: #00246b;
+ 
+}
 
  /* service page changes */
   * {
@@ -38,6 +45,15 @@
  } */
  
 
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  scroll-behavior: smooth;
+  color: #00246b;
+}
+ .bg_color{
+  background-color: #cadcfc;
+ }
 /* 
 /* Ruchita Section Start */
 
@@ -49,6 +65,23 @@
   border-radius: 20px;
 
 }
+.custom{
+    margin-top: 80px;
+    border: 5px solid rgb(3, 3, 51);
+    background-color: #90b0e2;;
+    font-size: large;
+    border-radius: 30px;
+    color:  rgb(3, 3, 51);
+    width: 240px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9px;
+   }
+   .custom:active{
+    border-color: #b82727;
+    color: #b82727;
+   }
 
 .flip-card-inner {
   position: relative;
@@ -304,6 +337,13 @@ footer {
   transition: color 0.3s ease;
 }
 
+.back {
+  /* background-image: url(/PUBLIC/team.jpg); */
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.842); */
+}
+
 .footer-icons a:hover i {
   color: #ccc;
 }
@@ -329,6 +369,12 @@ footer {
     }
   }
 
+.about,
+.single {
+    position: relative;
+    padding: 90px 0 60px 0;
+    /* background: #f2f2f2; */
+}
   .contact-box,
   .contact-map {
     max-width: 90%;
@@ -400,5 +446,3 @@ footer {
   color: #0d6efd !important;
   border-bottom: 2px solid #0d6efd;
 }
-
-
