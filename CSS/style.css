@@ -367,3 +367,38 @@ footer {
 .contact-box {
   animation: fadeInScale 0.20s ease-in-out forwards;
 }
+
+.nav-link-custom {
+  color: #000 !important;
+  position: relative;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 4px;
+  right: 0;
+  background: #000;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+  left: 0;
+  background: #000;
+}
+
+.nav-link-custom.active {
+  font-weight: 600;
+  color: #0d6efd !important;
+  border-bottom: 2px solid #0d6efd;
+}
+
+

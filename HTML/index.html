@@ -13,7 +13,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
   <link rel="icon" type="image/x-icon" href="../PUBLIC/rsinfotechsys_logo-modified.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -21,25 +21,45 @@
 </head>
 
 <body onload="AOS.init()" class="bg_color">
-  <!-- <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand text-white ms-5" href="#">
-          <img src="/PUBLIC/Company-logo-on-3d-glass-window-1536x864-removebg-preview.png" height="90" width="400"
-            alt="Company Logo">
-        </a>
+<header>
+  <nav class="navbar navbar-expand-lg bg-transparent shadow-sm">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <!-- <a class="navbar-brand" href="#">
+        <img src="/PUBLIC/Company-logo-on-3d-glass-window-1536x864-removebg-preview.png" 
+             alt="Company Logo" 
+             height="60" class="img-fluid" />
+      </a> -->
 
-                    <div class="navbar-brand navbar-brand-center text-white col ms-5">
-                        <img src="/IT-Portfolio/PUBLIC/Company-logo-on-3d-glass-window-1536x864-removebg-preview.png" height="90px"
-                            width="400px">
-                    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="me-4">
-          <a class="btn btn-outline-light" href="#">GET CONTACT</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="/HTML/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="/HTML/team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="/HTML/service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="/HTML/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-dark ms-lg-3 mt-2 mt-lg-0" href="#contact">GET CONTACT</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header> -->
+    </div>
+  </nav>
+</header>
+
+
 
      <!-- <video autoplay muted loop class="w-100">
       <source src="../PUBLIC/background.mp4" type="video/mp4">
@@ -347,7 +367,7 @@
     </div>
   </footer> -->
 
-  <script src="../JS/script.js"></script>
+  <script src="/JS/script.js"></script>
 </body>
 
 </html>
