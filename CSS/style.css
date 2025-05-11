@@ -1,383 +1,48 @@
-/* service section */
-.nav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  z-index:1;
-  top: 0;
-  width: 100%;
 
-}
-
-.navtext {
-  margin-top: 150px;
-  margin-left: 80px;
-}
-
-.nav-item:hover {
-
-  padding-left: 200px;
-  padding-right: 200px;
-  color: #8ebf4a;
-}
-
-.shadow {
-  box-shadow: 10px 10px 5px 0px rgba(242, 239, 239, 0.75);
-}
-
-.button {
-  border: 2px solid black;
-  margin-top: 35px; 
-  margin-bottom: 35px;
-  margin-right: 200px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #20223a, #8ebf4a);
-}
-
-:root {
-  --primery-color: white;
-  --secondary-color: rgba(255, 255, 255, 0.447);
-}
-
-#service-section {
-  min-height: 740px;
-  width: 100%;
-  background: #20223a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#service-section h2 {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-#service-section h2:after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: -30px;
-  height: 0;
-  width: 0;
-  border-top: 20px solid transparent;
-  border-left: 20px solid var(--primery-color);
-}
-
-#service-section h2:before {
-  position: absolute;
-  content: "";
-  top: 8px;
-  right: -30px;
-  height: 0;
-  width: 0;
-  border-top: 20px solid transparent;
-  border-right: 20px solid var(--primery-color);
-}
-
-#service-section #paragraph {
-  width: 40%;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  line-height: 1.5rem;
-  white-space: 1px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  z-index: 9;
-  margin-top: 20px;
-}
-
-.cards .card1 {
-  height: 350px;
-  width: 450px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 0 8%;
-  background: linear-gradient(135deg, rgb(35, 49, 66), rgb(103, 16, 242));
-  position: relative;
-  border-radius: 10px;
-}
-
-.cards .card1::before {
-  position: absolute;
-  content: " ";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: #8ebf4a;
-  transform: rotate(0deg);
-  z-index: -1;
-}
-
-.cards .card1:hover.card1::before {
-  transform: rotate(10deg);
-  transition: 1s;
-}
-
-.cards .card1 i {
-  font-size: 2.5rem;
-  color: var(--primery-color);
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-.cards .card1 h3 {
-  font-size: 1.8rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.cards .card1 .content p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.05rem;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-@media(max-width:1100px) {
-  #service-section h2 {
-    margin-top: 30px;
-  }
-
-  .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #service-section #paragraph {
-    width: 80%;
-  }
-}
-
-/* @media(max-width:900px){
-    .cards .card{
-      height:300px;  
-      width:400px;
-      margin:20px 0;
-    }
-} */
-body {
-  font-family: 'Playfair Display', sans-serif;
-  scroll-behavior: smooth;
-}
-
-header.video-bg {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.video-content {
-  position: relative;
-  z-index: 2;
-  top: 11%;
-  transform: translateY(-50%);
-  text-align: left;
-  color: white;
-  /* background: rgba(0, 0, 0, 0.4); */
-  padding: 32px;
-  border-radius: 15px;
-  animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.carousel-item img {
-  max-height: 500px;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 16px;
-  border-radius: 10px;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-  transition: all 0.3s;
-}
-
-.btn-outline-primary:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-.rounded-4 {
-  border-radius: 24px !important;
-}
-
-section.bg-primary {
-  padding: 60px 0;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #007bff;
-}
-
-.display-4 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #212529;
-  transition: color 0.3s ease;
-}
-
-.back {
-  background-image: url(../PUBLIC/flat-lay-workstation-with-copy-space-laptop.jpg);
-  background-position: center;
-  background-size: cover;
-  /* background-color: rgba(0, 0, 0, 0.842); */
-}
-
-.section-title {
-  font-weight: bold;
-  font-size: 1.8rem;
-  border-bottom: 3px solid #0d6efd;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.img-hover {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.img-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.fixed-size-img {
-  height: 250px;
-  /* You can adjust this value */
-  width: 100%;
-  object-fit: cover;
-}
-
-.about,
-.single {
-    position: relative;
-    padding: 90px 0 60px 0;
-    background: #f2f2f2;
-}
-
-.about .col-md-12,
-.about .col-md-6,
-.single .col-md-12,
-.single .col-md-6 {
-    margin-bottom: 30px;
-}
-
-.about .about-img,
-.single .single-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.about .about-img img,
-.single .single-img img {
-    width: 100%;
-}
-
-.about .about-content,
-.single .single-content {
-    position: relative;
-    width: 80%;
-    margin: -100px auto 0 auto;
-    padding: 30px;
-    background: #ffffff;
-}
-
-.about .about-content h2,
-.single .single-content h2 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.about .about-content p,
-.single .single-content p {
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.about .btn,
-.single .btn {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    background: #999999;
-    border-radius: 0;
-}
-
-.about .btn:hover,
-.single .btn:hover {
-    background: #4F84C4;
-}
+ /* service page changes */
+  * {
+    font-family:'Playfair-Display',sans-serif;
+    scroll-behavior: smooth;
+    }
+    .service-text{
+      font-size: 50px;
+    }
+    .bg_color{
+      background-color: #cadcfc;
+    }
+   .text-color{
+    color: #00246b;
+    }
+   .card-bg-color{
+    background-color: #00246b;
+   }
+   .custom{
+    margin-top: 80px;
+    border: 5px solid rgb(3, 3, 51);
+    background-color: #cadcfc;
+    font-size: large;
+    border-radius: 30px;
+    color:  rgb(3, 3, 51);
+    width: 240px;
+    height: 60px;
+   }
+   
 
 
+   
+ /* .service-main-heading{
+  font-size: 50px;
+ }
+ .image-service{
+  
+ } */
+ 
+
+/* 
 /* Ruchita Section Start */
-.background {
-  background-image: url(/PUBLIC/team.jpg);
-  background-size: cover;
-  background-position: center;
-
-
-}
 
 .flip-card {
-  background-color: transparent;
+  background-color: transparent;  
   width: 100%;
   height: 350px;
   perspective: 1000px;
@@ -414,13 +79,12 @@ section.bg-primary {
 .flip-card-front {
   /* background-color: #cdda1c; */
   color: black;
-  /* border-radius: 20px; */
   overflow: hidden;
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, rgba(35, 49, 66, 0.9), rgba(102, 16, 242, 0.8));
-  color: white;
+  background-color: #6c757d;
+  color: black;
   transform: rotateY(180deg);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
