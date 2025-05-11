@@ -13,8 +13,8 @@ function animateCounter(id, target) {
 window.onload = () => {
     AOS.init();
     animateCounter("count1", 120);
-    animateCounter("count2", 50);
-    animateCounter("count3", 150);
+    animateCounter("count2", 80);
+    animateCounter("count3", 250);
 };
 
 

@@ -412,7 +412,7 @@ section.bg-primary {
 }
 
 .flip-card-front {
-  background-color: #b82727;
+  /* background-color: #cdda1c; */
   color: black;
   /* border-radius: 20px; */
   overflow: hidden;
@@ -501,7 +501,7 @@ section.bg-primary {
   font-size: 180px;
   background-attachment: fixed;
   animation: bgScroll 10s linear infinite;
-  filter: blur(1.5px);
+  /* filter: blur(1.5px); */
 }
 
 .contact-text {
