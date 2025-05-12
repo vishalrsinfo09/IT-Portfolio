@@ -1,4 +1,4 @@
-/* -------------------------sharvari Contact us page style starts--------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -202,6 +202,103 @@ textarea {
   border: none;
 }
 
+  .contact-form-block {
+    background-color: whit;
+    width: 500px;
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    color: white;
+  }
+  
+  .contact-form-block h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color:rgb(3, 3, 51);;
+  }
+    input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid rgb(3, 3, 51);;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+   input:focus,
+  textarea:focus {
+    border-color: #90b0e2;;
+    box-shadow: 0 0 5px rgb(3, 3, 51);;
+  }
+    textarea {
+    resize: vertical;
+    height: 120px;
+    color:rgb(3, 3, 51);;
+  }
+     .input-block-5 {
+    background-color:rgb(3, 3, 51);;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+ .input-block-5:hover {
+    background-color: rgb(3, 3, 51);;
+  }
+   .footer-block{
+    background-color: rgb(3, 3, 51);
+    height: 400px;
+    width: auto;
+    margin-top: 200px;
+    padding-left: 800px;
+    padding-top: 200px;
+    margin-left: 50px;
+  }
+   .lastbox{
+     background-color: rgb(3, 3, 51);;
+     color:#90b0e2;
+     width: 100%;
+     padding: auto;
+   }
+   .contact-map{
+    border: 10px solid #90b0e2;
+    border-radius: 30px;
+   }
+   .subscribe-form .form-group{
+    position: relative;
+    margin-bottom: 0;
+    border-radius: 30px;
+   }
+   .subscribe-form .form-group input {
+    background: transparent;
+    border: 1px solid rgb(3, 3, 51);;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+   }
+   .form-control {
+    height: 40px ;
+    font-size: 15px;
+    border-radius: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+   }
+   
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .m-5 {
@@ -243,6 +340,57 @@ textarea {
   }
 }
 
+.subscribe-wrapper {
+      display: flex;
+      border: 1px solid black;
+      border-radius: 30px;
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .input[type="email"] {
+      padding: 15px 20px;
+      border: 2px solid white;
+      border-radius: 30px;
+      font-size: 16px;
+      width: 250px;
+      background: transparent;
+      color: white;
+    }
+
+    .input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    button {
+      padding: 0 25px;
+      border: 2px solid white;
+      border-radius: 30px;
+      margin-left: 6px;
+      padding:15px;
+      background-color: transparent;
+      border-left: 1px solid white;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color:#90b0e2;
+      color:rgb(3, 3, 51);
+      
+    
+    }
+
+    .error {
+      margin-top: 10px;
+      color: red;
+      text-align: center;
+      font-size: 14px;
+    }
+
 .navbar {
   background-color: rgba(255, 255, 255, 0) !important;
   backdrop-filter: blur(10px);
@@ -282,46 +430,58 @@ textarea {
   border-color: #00246b;
 }
 
-.custom-footer {
-  background-color: #90b0e2;
-  background-image: url('/PUBLIC/Mountain-footer-1.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: contain;
-  color: #00246b;
-  overflow: hidden;
-  padding-bottom: 120px;
+footer {
+  background-color: #0d1b2a;
+  color: #ffffff;
 }
 
-.custom-footer a {
-  color: #00246b;
+footer h5 {
+  color: #f8f9fa;
+  font-weight: 600;
+}
+
+.footer-link a {
+  color: #ccc;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 5px 0;
+  transition: all 0.3s ease;
 }
 
-.custom-footer a:hover {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bolder;
+.footer-link a:hover {
+  color: #00b4d8;
+  text-decoration: underline;
 }
 
-.custom-footer .social-icons a {
-  font-size: 2rem;
-  margin: 0 15px;
-  color: white;
-  transition: 0.3s;
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
-.custom-footer .social-icons a:hover {
-  color: #00246b;
+.social-icons a:hover {
+  color: #00b4d8;
 }
 
-.custom-footer .footer-bottom {
-  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
-  padding-top: 15px;
+.footer-bottom {
+  background-color: #1b263b;
+  padding: 15px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer-link a:hover,
+.social-icons a:hover {
+  color: #0d6efd !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom {
   font-size: 0.9rem;
 }
 
-.footer_text {
-  font-weight: bolder;
+.bg_color {
+  background-color: #00246b !important;
 }
+
