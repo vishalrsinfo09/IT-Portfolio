@@ -39,3 +39,18 @@ window.onload = () => {
 
 
 
+AOS.init();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    console.log("Current Path:", currentPath);
+
+    document.querySelectorAll(".nav-link-custom").forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+
+
+
