@@ -163,7 +163,7 @@ section.bg-primary {
 }
 
 .bg_color {
-  background-color: #3a648f;
+  background-color: #00246b;
 }
 
 .navbar {
@@ -224,7 +224,8 @@ section.bg-primary {
 
 .custom-footer a:hover {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .custom-footer .social-icons a {
@@ -242,4 +243,8 @@ section.bg-primary {
   /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   padding-top: 15px;
   font-size: 0.9rem;
+}
+
+.footer_text {
+  font-weight: bolder;
 }
