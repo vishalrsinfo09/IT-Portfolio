@@ -1,25 +1,14 @@
 /* Index file */
-body {
-  font-family: 'Playfair Display', sans-serif;
-  scroll-behavior: smooth;
-  color: #202428;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-.text-color {
-  color: #202428;
-}
 
 .card-bg-color {
   background-color: #00246b;
+
 }
 
-.image_height {
-  height: 400px;
+body {
+  font-family: 'Playfair Display', sans-serif;
+  scroll-behavior: smooth;
+  color: #00246b;
 }
 
 .custom {
@@ -175,6 +164,15 @@ section.bg-primary {
   background-color: #00246b;
 }
 
+.text-color {
+  color: #00246b;
+}
+
+.card-bg-color {
+  background-color: #00246b;
+}
+
+
 .navbar {
   background-color: rgba(255, 255, 255, 0) !important;
   backdrop-filter: blur(10px);
@@ -184,8 +182,8 @@ section.bg-primary {
 }
 
 .nav-link-custom {
-  font-weight: 600;
-  color: #00246b;
+  font-weight: 600 !important;
+  color: #00246b !important;
   padding: 0.5rem 1rem;
   position: relative;
   transition: color 0.3s ease;
@@ -212,34 +210,6 @@ section.bg-primary {
 
 .navbar-toggler {
   border-color: #00246b;
-}
-
-.image_height {
-  height: auto;
-  max-width: 100%;
-}
-
-
-.ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.ellipsis-multiline {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  /* number of lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.ellipsis-multiline {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  /* number of lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 footer {
