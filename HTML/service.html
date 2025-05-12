@@ -18,145 +18,274 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Overpass:wght@800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body  onload="AOS.init()" style="background-color: #90b0e2;">
+<body onload="AOS.init()" style="background-color: #90b0e2;">
+    <header>
 
-    <div class="container my-4 mt-5" data-aos="fade-right"  data-aos-duration="3000">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top bg-opacity-75 bg-transparent backdrop-blur">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="#">
+                    <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Company Logo" height="100" width="200" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="/HTML/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="/HTML/team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="/HTML/service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="/HTML/contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-dark ms-lg-3 mt-2 mt-lg-0 px-4 rounded-pill"
+                                data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Get Contact
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header bg_color text-white rounded-top-4">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Right Serve Infotech</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="messageTextarea" class="form-label">Message</label>
+                                <textarea class="form-control" id="messageTextarea" rows="3"
+                                    placeholder="Write your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-4 mt-5" data-aos="fade-right" data-aos-duration="3000">
         <div class="row align-items-center">
         <div class="col-md-6">
             <h1 class= "display-4 fw-bold h1 mb-5">SERVICES</h1>
             <p class="h2 ">Friendly, reliable technology company ensuring seamless and dependable service experience.</p>
                    <a  href="contact.html"   type="button" class="custom-button fw-bold">Request a Quote</a>
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold h1 mb-5">SERVICES</h1>
+                <p class="h2 ">Friendly, reliable technology company ensuring seamless and dependable service
+                    experience.</p>
+                <a type="button" class="custom-button fw-bold">Request a Quote</a>
+            </div>
+            <div class="col-md-6 mt-5" data-aos="fade-left">
+                <img src="/PUBLIC/service-image1.png" width="790" class="img-fluid">
+            </div>
         </div>
-        <div class="col-md-6 mt-5" data-aos="fade-left">
-            <img src="/PUBLIC/service-image1.png" width="790" class="img-fluid">
-        </div>
-       </div>
     </div>
 
-    <div class="container my-4 gap-5 " data-aos="fade-right"  data-aos-duration="3000">
+    <div class="container my-4 gap-5 " data-aos="fade-right" data-aos-duration="3000">
         <div class="row align-items-center">
-             <div class="col-md-6 mt-5 order-2 order-md-1">
-            <img src="/PUBLIC/service-image2.png" width="500" class="img-fluid data-aos = zoom-in-up">
+            <div class="col-md-6 mt-5 order-2 order-md-1">
+                <img src="/PUBLIC/service-image2.png" width="500" class="img-fluid data-aos = zoom-in-up">
+            </div>
+            <div class="col-md-6 mt-5  order-1 order-md-2" data-aos="fade-left">
+                <h1 class="display-4 fw-bold h2">
+                    <button class="btn btn-dark btn-lg p-3" type="button">Security Cameras</button>
+                </h1>
+                <span>
+                    <p class="h2">Enhancing safety through innovation: your trusted partner in security solutions.
+                    </p>
+            </div>
         </div>
-        <div class="col-md-6 mt-5  order-1 order-md-2" data-aos="fade-left">
-            <h1 class= "display-4 fw-bold h2">
-                 <button class="btn btn-dark btn-lg p-3" type="button">Security Cameras</button>
-            </h1>
-            <span><p class="h2">Enhancing safety through innovation: your trusted partner in security solutions.
-                </p>
-        </div>
-       </div>
     </div>
 
-      <div class="container my-4 mt-5" data-aos="fade-right">
+    <div class="container my-4 mt-5" data-aos="fade-right">
         <div class="row align-items-center">
-             <div class="col-md-6  mt-5" data-aos="fade-left">
+            <div class="col-md-6  mt-5" data-aos="fade-left">
                 <button class="btn btn-dark btn-lg p-3" type="button">Telephony & Voice Services</button>
-            <p class="h2">Empowering communication with tailored solutions: crystal clear communication for your customers.
-            </p>   
+                <p class="h2">Empowering communication with tailored solutions: crystal clear communication for your
+                    customers.
+                </p>
+            </div>
+            <div class="col-md-6  mt-5" data-aos="fade-left">
+                <img src="/PUBLIC/service-image3.png" width="500" class="img-fluid ms-5 data-aos = zoom-in-up">
+            </div>
         </div>
-             <div class="col-md-6  mt-5" data-aos="fade-left">
-            <img src="/PUBLIC/service-image3.png"  width="500" class="img-fluid ms-5 data-aos = zoom-in-up">
-        </div>
-       </div>
     </div><br><br>
-   
-      <div class="container my-4" data-aos="fade-right">
+
+    <div class="container my-4" data-aos="fade-right">
         <div class="row align-items-center mt-5">
-             <div class="col-md-6 mt-5 order-2 order-md-1">
-            <img src="/PUBLIC/service-image4.png"   width="500" class="img-fluid">
+            <div class="col-md-6 mt-5 order-2 order-md-1">
+                <img src="/PUBLIC/service-image4.png" width="500" class="img-fluid">
+            </div>
+            <div class="col-md-6 mt-5 order-1 order-md-2 " data-aos="fade-left">
+                <button class="btn btn-dark btn-lg p-3 mt-5" type="button">Remote Work Solutions</button>
+                <p class="h2">Fostering business agility for your success: your partner in adaptable solutions. </p>
+            </div>
         </div>
-        <div class="col-md-6 mt-5 order-1 order-md-2 " data-aos="fade-left">
-            <button class="btn btn-dark btn-lg p-3 mt-5" type="button">Remote Work Solutions</button>
-            <p class="h2">Fostering business agility for your success: your partner in adaptable solutions. </p>       
-        </div>
-       </div>
 
     </div><br><br>
-        <div class="container-fluid my-4 bg_color mt-5  style">
+    <div class="container-fluid my-4 bg_color mt-5  style">
         <div class="col-md-6 mx-auto">
-            <p class="h2 ms-5 mx-auto  pt-5  pb-5 text-center VIP-text"><img src="/PUBLIC/i-circle.png" width="30"> expertise transformed our telephony <img src="/PUBLIC/i-circle1.png" width="30"><br> and network integration. Their strategic approach made them invaluable partners, not just vendors, in our district’s growth.</p>
+            <p class="h1 ms-5 mx-auto  pt-5  pb-5 text-center VIP-text"><img src="/PUBLIC/i-circle.png" width="30">
+                expertise transformed our telephony <img src="/PUBLIC/i-circle1.png" width="30"> and network
+                integration. Their strategic approach made them invaluable partners, not just vendors, in our district’s
+                growth.</p>
 
-           <p class=" h4 ms-5 mx-auto  pt-5  pb-5 text-center">– Ali Shehada, Broken Arrow Public Schools, Network Services Director.</p> 
+            <p class=" h4 ms-5 mx-auto  pt-5  pb-5 text-center">– Ali Shehada, Broken Arrow Public Schools, Network
+                Services Director.</p>
         </div>
-       </div>
     </div>
-
-     <div class="container my-4" data-aos="fade-right">
-        <div class="row align-items-center">
-             <div class="col-md-6">
-            <h1 class= "display-4 fw-bold h1 "></h1>
-            <button class="btn btn-dark btn-lg p-3" type="button">Infrastructure Systems</button>
-            <p class="h2">Empowering hand success through expertise: your go-to friendly tech partner. </p>
-        </div>
-             <div class="col-md-6 mt-5 " data-aos="fade-left">
-            <img src="/PUBLIC/service-image5.png" width="500" class="img-fluid">
-        </div>
-       </div>
     </div>
 
     <div class="container my-4" data-aos="fade-right">
         <div class="row align-items-center">
-             <div class="col-md-6 mt-5 order-2 order-md-1">
-            <img src="/PUBLIC/service-image6.png"  width="500" class="img-fluid">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold h1 "></h1>
+                <button class="btn btn-dark btn-lg p-3" type="button">Infrastructure Systems</button>
+                <p class="h2">Empowering hand success through expertise: your go-to friendly tech partner. </p>
+            </div>
+            <div class="col-md-6 mt-5 " data-aos="fade-left">
+                <img src="/PUBLIC/service-image5.png" width="500" class="img-fluid">
+            </div>
         </div>
-        <div class="col-md-6 order-1 order-md-2">
-            <button class="btn btn-dark btn-lg p-3" type="button">Equipment as a Service</button>
-            <h1 class= "display-4 fw-bold h2"></h1>
-            <p class="h2">Excelling service: providing top-notch hardware for hard working companies.
-                  </p>   
+    </div>
+
+    <div class="container my-4" data-aos="fade-right">
+        <div class="row align-items-center">
+            <div class="col-md-6 mt-5 order-2 order-md-1">
+                <img src="/PUBLIC/service-image6.png" width="500" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <button class="btn btn-dark btn-lg p-3" type="button">Equipment as a Service</button>
+                <h1 class="display-4 fw-bold h2"></h1>
+                <p class="h2">Excelling service: providing top-notch hardware for hard working companies.
+                </p>
+            </div>
         </div>
-       </div>
     </div>
 
     <div class="container-fluid my-4  style">
         <div class="row align-items-center">
-             <div class="col-md-6 ">
-            <h1 class= "display-4 fw-bold h2"></h1>
-            <a class="custom-btn1 btn-lg p-3 ms-5 text-center" type="button">Our Practice</a>
-            <p class="h1 ms-5">Empowering hand  <img src="/PUBLIC/hand-icon.png"> through expertise: your go-to friendly tech partner.
-                  </p>      
+            <div class="col-md-6 ">
+                <h1 class="display-4 fw-bold h2"></h1>
+                <p class="custom-btn1 btn-lg p-3 ms-5 text-center" type="button">Our Practice</p>
+                <p class="h1 ms-5">Empowering hand <img src="/PUBLIC/hand-icon.png"> through expertise: your go-to
+                    friendly tech partner.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/PUBLIC/ourpractice-service.png" width="600" class="img-fluid">
+            </div>
         </div>
-             <div class="col-md-6" >
-            <img src="/PUBLIC/ourpractice-service.png" width="600"  class="img-fluid">
-        </div>
-       </div>
     </div>
 
-      <div class="container my-4" data-aos="fade-right">
+    <div class="container my-4" data-aos="fade-right">
         <div class="row align-items-center">
-          
-             <div class="col-md-6 order-2 order-md-1">
-            <img src="/PUBLIC/service-image888-bgr.png" width="500" class="img-fluid">
+
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="/PUBLIC/service-image888-bgr.png" width="500" class="img-fluid">
             </div>
             <div class="col-md-6 mt-5 order-1 order-md-2" data-aos="fade-left">
-            <h1 class= "display-4 fw-bold h2"></h1>
-            <button class="btn btn-dark btn-lg p-3" type="button">Computers & Servers</button>
-            <p class="h2">Excelling service: providing top-notch hardware for hard working companies.
-                  </p>
-                   
-          </div>
-       </div>
+                <h1 class="display-4 fw-bold h2"></h1>
+                <button class="btn btn-dark btn-lg p-3" type="button">Computers & Servers</button>
+                <p class="h2">Excelling service: providing top-notch hardware for hard working companies.
+                </p>
+
+            </div>
+        </div>
     </div>
 
-      <div class="container-fluid my-4 mt-5" data-aos="fade-right">
+    <div class="container-fluid my-4 mt-5" data-aos="fade-right">
         <div class="row align-items-center ms-5">
-             <div class="col-md-6">
-               <button class="btn btn-dark btn-lg p-3 mt-5">Managed IT Services</button>
+            <div class="col-md-6">
+                <button class="btn btn-dark btn-lg p-3 mt-5">Managed IT Services</button>
                 <p class="h2">Ultimate guarantee: seamless software performance and fortified data security.
                 </p>
-               </div>
-             <div class="col-md-6" data-aos="fade-left">
-            <img src="/PUBLIC/service9.png" width="500" class="img-fluid ms-5">
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="/PUBLIC/service9.png" width="500" class="img-fluid ms-5">
+            </div>
         </div>
-       </div>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <footer class="custom-footer text-white">
+        <div class="container py-5">
+            <h4 class="text-center mb-4 fw-bold">Follow us on social</h4>
+            <div class="social-icons text-center mb-5">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
 
-    
+            <div class="row text-start">
+                <div class="col-md-3 mb-4">
+                    <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Logo" width="150" />
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Who We Are</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/HTML/service.html">Services</a></li>
+                        <li><a href="/HTML/contact.html">Contact</a></li>
+                        <li><a href="/HTML/team.html">Teams</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">All Industries</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-4">
+                <p class="mb-0">&copy; Right Serve Infotech Systems 2025</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/JS/script.js"></script>
+
 </body>
+
 </html>
