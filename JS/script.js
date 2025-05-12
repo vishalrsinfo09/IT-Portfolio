@@ -12,11 +12,31 @@ function animateCounter(id, target) {
 
 window.onload = () => {
     AOS.init();
-    animateCounter("count1", 250);
-    animateCounter("count2", 80);
-    animateCounter("count3", 250);
-    animateCounter("count4", 75);
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 // 30% dikhne par trigger karega
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter("count1", 250);
+                animateCounter("count2", 80);
+                animateCounter("count3", 250);
+                animateCounter("count4", 75);
+                observer.unobserve(entry.target); // Ek hi baar chalaye
+            }
+        });
+    }, options);
+
+    const targetSection = document.querySelector('[data-aos="fade-up"]');
+    if (targetSection) {
+        observer.observe(targetSection);
+    }
 };
+
 
 function data() {
     var name = document.getElementById("name").value;
