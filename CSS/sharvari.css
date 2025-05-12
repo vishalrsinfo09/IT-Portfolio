@@ -1,4 +1,4 @@
-/* -------------------------sharvari Contact us page style starts--------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -202,6 +202,103 @@ textarea {
   border: none;
 }
 
+  .contact-form-block {
+    background-color: whit;
+    width: 500px;
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    color: white;
+  }
+  
+  .contact-form-block h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color:rgb(3, 3, 51);;
+  }
+    input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid rgb(3, 3, 51);;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+   input:focus,
+  textarea:focus {
+    border-color: #90b0e2;;
+    box-shadow: 0 0 5px rgb(3, 3, 51);;
+  }
+    textarea {
+    resize: vertical;
+    height: 120px;
+    color:rgb(3, 3, 51);;
+  }
+     .input-block-5 {
+    background-color:rgb(3, 3, 51);;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+ .input-block-5:hover {
+    background-color: rgb(3, 3, 51);;
+  }
+   .footer-block{
+    background-color: rgb(3, 3, 51);
+    height: 400px;
+    width: auto;
+    margin-top: 200px;
+    padding-left: 800px;
+    padding-top: 200px;
+    margin-left: 50px;
+  }
+   .lastbox{
+     background-color: rgb(3, 3, 51);;
+     color:#90b0e2;
+     width: 100%;
+     padding: auto;
+   }
+   .contact-map{
+    border: 10px solid #90b0e2;
+    border-radius: 30px;
+   }
+   .subscribe-form .form-group{
+    position: relative;
+    margin-bottom: 0;
+    border-radius: 30px;
+   }
+   .subscribe-form .form-group input {
+    background: transparent;
+    border: 1px solid rgb(3, 3, 51);;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+   }
+   .form-control {
+    height: 40px ;
+    font-size: 15px;
+    border-radius: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+   }
+   
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .m-5 {
@@ -242,6 +339,57 @@ textarea {
     height: auto;
   }
 }
+
+.subscribe-wrapper {
+      display: flex;
+      border: 1px solid black;
+      border-radius: 30px;
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .input[type="email"] {
+      padding: 15px 20px;
+      border: 2px solid white;
+      border-radius: 30px;
+      font-size: 16px;
+      width: 250px;
+      background: transparent;
+      color: white;
+    }
+
+    .input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    button {
+      padding: 0 25px;
+      border: 2px solid white;
+      border-radius: 30px;
+      margin-left: 6px;
+      padding:15px;
+      background-color: transparent;
+      border-left: 1px solid white;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color:#90b0e2;
+      color:rgb(3, 3, 51);
+      
+    
+    }
+
+    .error {
+      margin-top: 10px;
+      color: red;
+      text-align: center;
+      font-size: 14px;
+    }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0) !important;
@@ -336,3 +484,4 @@ footer h5 {
 .bg_color {
   background-color: #00246b !important;
 }
+

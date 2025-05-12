@@ -38,19 +38,49 @@ window.onload = () => {
 };
 
 
-
 AOS.init();
-
+  
 document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname;
-    console.log("Current Path:", currentPath);
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
 
-    document.querySelectorAll(".nav-link-custom").forEach(link => {
-        if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active");
-        }
-    });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    const name = document.querySelector(".input-block-1").value.trim();
+    const email = document.querySelector(".input-block-2").value.trim();
+    const phone = document.querySelector(".input-block-3").value.trim();
+    const message = document.querySelector(".input-block-4").value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    status.style.color = "red";
+    status.textContent = "";
+
+    if (!name || !email || !emailPattern.test(email) || !phone || isNaN(phone) || phone.length < 10 || !message) {
+      status.textContent = "❌ Submission failed: Please fill out all fields correctly.";
+      return;
+    }
+
+    status.style.color = "green";
+    status.textContent = "✅ Form submitted successfully!";
+    form.reset(); 
+  });
 });
 
+// const form = document.getElementById('subscribe-form');
+//     const emailInput = document.getElementById('email');
+//     const errorMessage = document.getElementById('error-message');
 
+//     form.addEventListener('submit', function(e) {
+//       e.preventDefault();
+//       const email = emailInput.value;
+//       const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
+//       if (emailRegex.test(email)) {
+//         errorMessage.textContent = '';
+//         alert('Subscribed successfully!');
+//         emailInput.value = '';
+//       } else {
+//         errorMessage.textContent = 'Please enter a valid email address.';
+//       }
+    // });
