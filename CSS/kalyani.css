@@ -1,4 +1,4 @@
-/* service page changes */
+/* ...................................service page changes .....................................*/
 * {
   font-family: 'Playfair Display', sans-serif;
 }
@@ -56,7 +56,7 @@
 
 /* service page end */
 
-/* team page start */
+/* ......................................team page start....................................... */
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -132,15 +132,6 @@
   transform: scale(1.05);
   border-color: #6610f2;
 }
-
-/* .social-icons a {
-  transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-  color: #0d6efd;
-  transform: scale(1.2);
-} */
 
 .img_style {
   width: 120px;
