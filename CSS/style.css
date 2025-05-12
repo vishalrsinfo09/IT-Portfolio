@@ -1,16 +1,14 @@
 /* Index file */
-body {
-  font-family: 'Playfair Display', sans-serif;
-  scroll-behavior: smooth;
-  color: #202428;
-}
-
-.text-color {
-  color: #202428;
-}
 
 .card-bg-color {
   background-color: #00246b;
+
+}
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  scroll-behavior: smooth;
+  color: #00246b;
 }
 
 .custom {
@@ -166,6 +164,15 @@ section.bg-primary {
   background-color: #00246b;
 }
 
+.text-color {
+  color: #00246b;
+}
+
+.card-bg-color {
+  background-color: #00246b;
+}
+
+
 .navbar {
   background-color: rgba(255, 255, 255, 0) !important;
   backdrop-filter: blur(10px);
@@ -175,8 +182,8 @@ section.bg-primary {
 }
 
 .nav-link-custom {
-  font-weight: 600;
-  color: #00246b;
+  font-weight: 600 !important;
+  color: #00246b !important;
   padding: 0.5rem 1rem;
   position: relative;
   transition: color 0.3s ease;
