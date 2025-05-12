@@ -16,7 +16,7 @@ window.onload = () => {
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3 // 30% dikhne par trigger karega
+        threshold: 0.3 
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -26,7 +26,7 @@ window.onload = () => {
                 animateCounter("count2", 80);
                 animateCounter("count3", 250);
                 animateCounter("count4", 75);
-                observer.unobserve(entry.target); // Ek hi baar chalaye
+                observer.unobserve(entry.target); 
             }
         });
     }, options);
