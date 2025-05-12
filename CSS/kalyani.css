@@ -206,46 +206,53 @@
   border-color: #00246b;
 }
 
-.custom-footer {
-  background-color: #90b0e2;
-  background-image: url('/PUBLIC/Mountain-footer-1.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: contain;
-  color: #00246b;
-  overflow: hidden;
-  padding-bottom: 120px;
+footer {
+  background-color: #0d1b2a;
+  color: #ffffff;
 }
 
-.custom-footer a {
-  color: #00246b;
+footer h5 {
+  color: #f8f9fa;
+  font-weight: 600;
+}
+
+.footer-link a {
+  color: #ccc;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 5px 0;
+  transition: all 0.3s ease;
 }
 
-.custom-footer a:hover {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bolder;
+.footer-link a:hover {
+  color: #00b4d8;
+  text-decoration: underline;
 }
 
-.custom-footer .social-icons a {
-  font-size: 2rem;
-  margin: 0 15px;
-  color: white;
-  transition: 0.3s;
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
-.custom-footer .social-icons a:hover {
-  color: #00246b;
+.social-icons a:hover {
+  color: #00b4d8;
 }
 
-.custom-footer .footer-bottom {
-  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
-  padding-top: 15px;
+.footer-bottom {
+  background-color: #1b263b;
+  padding: 15px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer-link a:hover,
+.social-icons a:hover {
+  color: #0d6efd !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom {
   font-size: 0.9rem;
-}
-
-.footer_text {
-  font-weight: bolder;
 }
