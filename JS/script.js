@@ -12,11 +12,30 @@ function animateCounter(id, target) {
 
 window.onload = () => {
     AOS.init();
-    animateCounter("count1", 120);
-    animateCounter("count2", 50);
-    animateCounter("count3", 150);
-};
 
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter("count1", 250);
+                animateCounter("count2", 80);
+                animateCounter("count3", 250);
+                animateCounter("count4", 75);
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, options);
+
+    const targetSection = document.querySelector('[data-aos="fade-up"]');
+    if (targetSection) {
+        observer.observe(targetSection);
+    }
+};
 
 
 function data() {
@@ -37,3 +56,17 @@ function data() {
     }
 }
 AOS.init();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    console.log("Current Path:", currentPath);
+
+    document.querySelectorAll(".nav-link-custom").forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+
+
+
