@@ -1,13 +1,8 @@
-/* service page changes */
+/* ...................................service page changes .....................................*/
 * {
   font-family: 'Playfair Display', sans-serif;
 }
 
-/* 
-    body{
-      background-color:  #90b0e2;
-      font-family: 'Playfair Display', sans-serif;
-    } */
     .service-text{
       font-size: 90px;
       font-weight: bolder;
@@ -49,9 +44,9 @@
     width: 240px;
     height: 60px; 
    }
-/* service page end */
+/* .....................................service page end............................................................ */
 
-/* team page start */
+/* ......................................team page start....................................... */
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -127,15 +122,6 @@
   transform: scale(1.05);
   border-color: #6610f2;
 }
-
-/* .social-icons a {
-  transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-  color: #0d6efd;
-  transform: scale(1.2);
-} */
 
 .img_style {
   width: 120px;
@@ -235,7 +221,6 @@
 }
 
 .custom-footer .footer-bottom {
-  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   padding-top: 15px;
   font-size: 0.9rem;
 }
@@ -243,3 +228,5 @@
 .bg_color {
   background-color: #3a648f;
 }
+
+/* .................................team page end............................................ */
