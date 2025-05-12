@@ -301,7 +301,8 @@ textarea {
 
 .custom-footer a:hover {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .custom-footer .social-icons a {
@@ -321,6 +322,6 @@ textarea {
   font-size: 0.9rem;
 }
 
-.bg_color {
-  background-color: #3a648f;
+.footer_text {
+  font-weight: bolder;
 }
