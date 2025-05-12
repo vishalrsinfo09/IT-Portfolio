@@ -18,60 +18,98 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 </head>
 
 <body onload="AOS.init()" style="background-color: #90b0e2;">
-  
-<header>
-  <nav class="navbar navbar-expand-lg bg-transparent shadow-sm">
-    <div class="container-fluid px-4">
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="/HTML/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="/HTML/team.html">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="/HTML/service.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="/HTML/contact.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-dark ms-lg-3 mt-2 mt-lg-0" href="#contact">GET CONTACT</a>
-          </li>
-        </ul>
+  <header>
+
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top bg-transparent">
+
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">
+          <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Company Logo" height="100" width="200" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark ms-lg-3 mt-2 mt-lg-0 px-4 rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#contactModal">
+                Get Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header bg_color text-white rounded-top-4">
+            <h5 class="modal-title" id="contactModalLabel">Contact Right Serve Infotech</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="messageTextarea" class="form-label">Message</label>
+                <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Write your message..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-<div class="container my-4">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h1 class="display-4 fw-bold text-color"se>Welcome to Right Serve Infotech</h1>
-      <p class="lead">We work with our clients across many industries to design and implement the best possible solutions for their technology and communication needs and requirements.</p>
-      
-      <a href="#about"  type="button" class="custom mt-3">Request a Quote</a>
+  </header>
 
-    </div>
-    <div class="col-md-6">
-      <img src="/PUBLIC/industries image.jpg" class="img-fluid" alt="Image">
+  <div class="container my-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold text-color" se>Welcome to Right Serve Infotech</h1>
+        <p class="lead">We work with our clients across many industries to design and implement the best possible
+          solutions for their technology and communication needs and requirements.</p>
+
+        <a href="#about" type="button" class="custom mt-3">Request a Quote</a>
+
+      </div>
+      <div class="col-md-6">
+        <img src="/PUBLIC/industries image.jpg" class="img-fluid" alt="Image">
+      </div>
     </div>
   </div>
-</div>
-<section class="d-flex flex-column flex-md-row justify-content-around card-bg-color py-5 "
-    data-aos="fade-up">
+  <section class="d-flex flex-column flex-md-row justify-content-around card-bg-color py-5 " data-aos="fade-up">
     <div class="card text-center p-3 mb-3 mb-md-0">
       <div class="card-body">
         <i class="bi bi-emoji-smile display-3 text-primary mb-2"></i>
@@ -87,12 +125,12 @@
       </div>
     </div>
     <div class="card text-center p-3 mb-3 mb-md-0">
-  <div class="card-body">
-    <i class="bi bi-check-circle-fill display-3 text-warning mb-2"></i>
-    <h5 class="card-title">Completed Projects</h5>
-    <p class="display-4 fw-bold" id="count4">0</p>
-  </div>
-</div>
+      <div class="card-body">
+        <i class="bi bi-check-circle-fill display-3 text-warning mb-2"></i>
+        <h5 class="card-title">Completed Projects</h5>
+        <p class="display-4 fw-bold" id="count4">0</p>
+      </div>
+    </div>
 
     <div class="card text-center p-3">
       <div class="card-body">
@@ -105,162 +143,204 @@
 
   <h1 class="fw-bold  text-center mt-5" style="color: #202428;">Who We Are</h1>
   <div class="container my-4" data-aos="fade-right" data-aos-duration="1000">
-  <div class="row align-items-center">
-    <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-      <h3 class="display-4 fw-bold text-color"se>Vision</h3>
-      <p class="lead">"Our vision is to become a global leader in the IT industry by continuously innovating, delivering high-quality and secure technological solutions, and fostering digital transformation that empowers businesses to achieve their full potential. We aspire to build an ecosystem where technology serves as a catalyst for growth, inclusivity, and sustainable development across all industries."
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="display-4 fw-bold text-color" se>Vision</h3>
+        <p class="lead">"Our vision is to become a global leader in the IT industry by continuously innovating,
+          delivering high-quality and secure technological solutions, and fostering digital transformation that empowers
+          businesses to achieve their full potential. We aspire to build an ecosystem where technology serves as a
+          catalyst for growth, inclusivity, and sustainable development across all industries."
 
- </p>
-      
-    </div>
-    <div class="col-md-6">
-      <img src="/PUBLIC/vision-image-removebg-preview.png" class="img-fluid" alt="Image">
-    </div>
-  </div>
-</div>
-<div class="container my-5"data-aos="fade-up" data-aos-duration="1000">
-  <div class="row align-items-center">
-    
-    <div class="col-md-6 mb-4 mb-md-0 order-2 order-md-1"data-aos="zoom-in-right" data-aos-delay="150">
-      <img src="/PUBLIC/homeposter-image.png" class="img-fluid" alt="Mission Image">
-    </div>
+        </p>
 
-   
-    <div class="col-md-6  order-1 order-md-2 " data-aos="zoom-in-left" data-aos-delay="300">
-      <h1 class="display-4 fw-bold text-color mb-5">Mission</h1>
-      <p class="lead">
-        "Our mission is to deliver cutting-edge, secure, and scalable technology solutions that empower businesses to innovate, grow, and thrive in the digital era. We are committed to excellence through continuous learning, collaborative partnerships, and customer-focused services that align with the evolving needs of the industry."
-
-
-      </p>
-      
+      </div>
+      <div class="col-md-6">
+        <img src="/PUBLIC/vision-image-removebg-preview.png" class="img-fluid" alt="Image">
+      </div>
     </div>
   </div>
-</div>
-<div class="container my-4"data-aos="fade-right" data-aos-duration="1000">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h3 class="display-4 fw-bold text-color"se>About Us</h3>
-      <p class="lead">"To be the global catalyst for digital excellence – where visionary design, intelligent engineering and business strategy converge to build the Future! To build digital solutions that unlock value, inspire innovation, and ultimately redefine industries."
+  <div class="container my-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="row align-items-center">
 
- </p>
-      
-    </div>
-    <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-      <img src="/PUBLIC/about.jpg" class="img-fluid" alt="Image">
+      <div class="col-md-6 mb-4 mb-md-0 order-2 order-md-1" data-aos="zoom-in-right" data-aos-delay="150">
+        <img src="/PUBLIC/homeposter-image.png" class="img-fluid" alt="Mission Image">
+      </div>
+
+
+      <div class="col-md-6  order-1 order-md-2 " data-aos="zoom-in-left" data-aos-delay="300">
+        <h1 class="display-4 fw-bold text-color mb-5">Mission</h1>
+        <p class="lead">
+          "Our mission is to deliver cutting-edge, secure, and scalable technology solutions that empower businesses to
+          innovate, grow, and thrive in the digital era. We are committed to excellence through continuous learning,
+          collaborative partnerships, and customer-focused services that align with the evolving needs of the industry."
+
+
+        </p>
+
+      </div>
     </div>
   </div>
-</div>
+  <div class="container my-4" data-aos="fade-right" data-aos-duration="1000">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="display-4 fw-bold text-color" se>About Us</h3>
+        <p class="lead">"To be the global catalyst for digital excellence – where visionary design, intelligent
+          engineering and business strategy converge to build the Future! To build digital solutions that unlock value,
+          inspire innovation, and ultimately redefine industries."
 
-<div class="about "> 
+        </p>
+
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+        <img src="/PUBLIC/about.jpg" class="img-fluid" alt="Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="about ">
     <div class="row align-items-center" data-aos="fade-up">
-        <div class="col-md-12">
-          <div class="about-img">
-            <img src="../PUBLIC/workers-long-wooden-table.jpg" alt="" class="img-fluid">
-          </div>
-          <div class="about-content">
-            <h2>Welcome to Our Site</h2>
-            <p>
-              Right Serve Infotech Systems Private Limited is a leading provider of comprehensive software and hardware
-              solutions, dedicated to empowering businesses across diverse industries.we've grown into a trusted name,
-              offering both custom-tailored and product-based solutions to meet the unique needs of our clients. With a
-              focus on innovation, quality, and customer satisfaction, we are committed to delivering reliable and
-              efficient technology solutions that drive growth and enhance operational efficiency.
-            </p>
-            <a class="btn" href="#">Read More</a>
-          </div>
+      <div class="col-md-12">
+        <div class="about-img">
+          <img src="../PUBLIC/workers-long-wooden-table.jpg" alt="" class="img-fluid">
         </div>
-      </div>
-
-      <div class="row " data-aos="fade-up" data-aos-delay="200">
-        <div class="col-md-6">
-          <div class="about-img">
-            <img src="../PUBLIC/diverse-people-working-office.jpg" alt="" class="img-fluid">
-          </div>
-          <div class="about-content">
-            <h2>We Offer High Quality Services</h2>
-            <p>
-
-              We specialize in a range of services, including software development, business solutions, mobile
-              application development, hardware solutions, desktop application development, digital marketing, and
-              customized software development.
-
-              Our commitment to quality ensures that each project is executed to the highest standards, delivering
-              exceptional results tailored to your specific needs.
-            </p>
-            <a class="btn" href="#">Read More</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="about-img">
-            <img src="../PUBLIC/modern-equipped-computer-lab (1).jpg" alt="" class="img-fluid">
-          </div>
-          <div class="about-content">
-            <h2>Empowering Success Through Quality Solutions</h2>
-            <p>
-              Our mission is to be a leading provider of innovative software solutions and reliable hardware products,
-              tailored to meet diverse industry needs. We aim to enhance business efficiency through cutting-edge
-              technology, exceptional service, and a commitment to continuous improvement, ensuring our clients achieve
-              their goals with confidence and ease.
-
-              Together, we strive to unlock new opportunities and drive success for our clients, enabling them to
-              navigate their journeys with assurance and effectiveness.
-            </p>
-            <a class="btn" href="#">Read More</a>
-          </div>
+        <div class="about-content">
+          <h2>Welcome to Our Site</h2>
+          <p>
+            Right Serve Infotech Systems Private Limited is a leading provider of comprehensive software and hardware
+            solutions, dedicated to empowering businesses across diverse industries.we've grown into a trusted name,
+            offering both custom-tailored and product-based solutions to meet the unique needs of our clients. With a
+            focus on innovation, quality, and customer satisfaction, we are committed to delivering reliable and
+            efficient technology solutions that drive growth and enhance operational efficiency.
+          </p>
+          <a class="btn" href="#">Read More</a>
         </div>
       </div>
     </div>
-  </div> 
 
+    <div class="row " data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6">
+        <div class="about-img">
+          <img src="../PUBLIC/diverse-people-working-office.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="about-content">
+          <h2>We Offer High Quality Services</h2>
+          <p>
 
-  
+            We specialize in a range of services, including software development, business solutions, mobile
+            application development, hardware solutions, desktop application development, digital marketing, and
+            customized software development.
 
+            Our commitment to quality ensures that each project is executed to the highest standards, delivering
+            exceptional results tailored to your specific needs.
+          </p>
+          <a class="btn" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-img">
+          <img src="../PUBLIC/modern-equipped-computer-lab (1).jpg" alt="" class="img-fluid">
+        </div>
+        <div class="about-content">
+          <h2>Empowering Success Through Quality Solutions</h2>
+          <p>
+            Our mission is to be a leading provider of innovative software solutions and reliable hardware products,
+            tailored to meet diverse industry needs. We aim to enhance business efficiency through cutting-edge
+            technology, exceptional service, and a commitment to continuous improvement, ensuring our clients achieve
+            their goals with confidence and ease.
+
+            Together, we strive to unlock new opportunities and drive success for our clients, enabling them to
+            navigate their journeys with assurance and effectiveness.
+          </p>
+          <a class="btn" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <section class="py-5" id="gallery">
-  <div class="container">
-    <div class="row g-4">
+    <div class="container">
+      <div class="row g-4">
 
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="gallery-item">
-          <img src="/PUBLIC/home1.png" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
-            data-bs-toggle="modal" data-bs-target="#imageModal1">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="gallery-item">
+            <img src="/PUBLIC/home1.png" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal1">
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-item">
+            <img src="/PUBLIC/scroll (3).jpg" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal2">
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-item">
+            <img src="/PUBLIC/home2.png" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
+              data-bs-toggle="modal" data-bs-target="#imageModal3">
+          </div>
         </div>
       </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="gallery-item">
-          <img src="/PUBLIC/scroll (3).jpg" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
-            data-bs-toggle="modal" data-bs-target="#imageModal2">
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="gallery-item">
-          <img src="/PUBLIC/home2.png" class="img-fluid rounded shadow-sm img-hover fixed-size-img"
-            data-bs-toggle="modal" data-bs-target="#imageModal3">
-        </div>
-      </div>
-
     </div>
-  </div>
-  
-  
-</section>
+  </section>
 
+  <footer class="custom-footer text-white">
+    <div class="container py-5">
+      <h4 class="text-center mb-4 fw-bold">Follow us on social</h4>
+      <div class="social-icons text-center mb-5">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
 
-  
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Logo" width="150" />
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Who We Are</h6>
+          <ul class="list-unstyled">
+            <li><a href="/HTML/service.html">Services</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+            <li><a href="/HTML/team.html">Teams</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Products</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">All Industries</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Equipment</a></li>
+          </ul>
+        </div>
+      </div>
 
-  <script src="/JS/script.js">
-    </script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
+      <div class="footer-bottom text-center mt-4">
+        <p class="mb-0 text-dark">&copy; Right Serve Infotech Systems 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/JS/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 </body>
 

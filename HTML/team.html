@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/CSS/kalyani.css">
@@ -10,25 +11,94 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 </head>
+
 <body style="background-color: #90b0e2;">
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top bg-opacity-75 bg-transparent backdrop-blur">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">
+          <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Company Logo" height="100" width="200" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/HTML/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark ms-lg-3 mt-2 mt-lg-0 px-4 rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#contactModal">
+                Get Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header bg_color text-white rounded-top-4">
+            <h5 class="modal-title" id="contactModalLabel">Contact Right Serve Infotech</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="messageTextarea" class="form-label">Message</label>
+                <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Write your message..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="background">
     <h1 class="text-center pt-4 fs-2 text_style h1 fw-bold">Our Expert Team</h1>
     <h2 class="text-center fs-5 text_style_shadow h2 fw-bold">Our Expert & Well Experience Staff</h2>
     <div class="container py-5">
-      <div class="row g-5"> 
+      <div class="row g-5">
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 ">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front text-center p-4  rounded shadow ">
-                <img src="/PUBLIC/saurabh_jagthap.jpg"  width="100" height="100"  alt="Saurabh Jagthap"
-                 class="img-fluid rounded-circle profile-img mb-3 img_style">
+                <img src="/PUBLIC/saurabh_jagthap.jpg" width="100" height="100" alt="Saurabh Jagthap"
+                  class="img-fluid rounded-circle profile-img mb-3 img_style">
                 <h4 class="fw-semibold mb-1">Saurabh Jagthap</h4>
                 <h5 class="text-dark-title mb-3">Director</h5>
-              
+
               </div>
               <div class="flip-card-back">
                 <h3 class="mt-4">Saurabh Jagthap</h3>
@@ -54,7 +124,8 @@
               </div>
               <div class="flip-card-back">
                 <h3 class="mt-4">Rahul Singh Chaudhari</h3>
-                <p class="ms-5 me-5">Leading with vision, expertise, and dedication to drive continuous innovation and company growth.</p>
+                <p class="ms-5 me-5">Leading with vision, expertise, and dedication to drive continuous innovation and
+                  company growth.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Digital Transformation, Operational Excellence</p>
                 <p><strong>Education:</strong> MBA - IIM Ahmedabad</p>
@@ -76,7 +147,8 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Piyush Pandey</h3>
 
-                <p class="ms-5 me-5">Driving large-scale infrastructure projects with a focus on innovation, safety, and operational
+                <p class="ms-5 me-5">Driving large-scale infrastructure projects with a focus on innovation, safety, and
+                  operational
                   excellence.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Project Management, Infrastructure Development, Budgeting & Cost Control
@@ -102,7 +174,8 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Abhishek Tijare</h3>
 
-                <p class="ms-5 me-5">Specializing in scalable applications, delivering impactful solutions with technical expertise.</p>
+                <p class="ms-5 me-5">Specializing in scalable applications, delivering impactful solutions with
+                  technical expertise.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Full-Stack Development, Software Architecture, Agile Methodologies</p>
                 <p><strong>Education:</strong> B.Tech – Computer Science, XYZ University</p>
@@ -126,7 +199,8 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Jayshree Bawankar</h3>
 
-                <p class="ms-5 me-5">Passionate coder, dedicated to creating elegant solutions and driving technological innovation.</p>
+                <p class="ms-5 me-5">Passionate coder, dedicated to creating elegant solutions and driving technological
+                  innovation.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Frontend Development, UI/UX Design, Application Optimization</p>
                 <p><strong>Education:</strong> B.E. – Information Technology</p>
@@ -151,7 +225,8 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Vishal Mirase</h3>
 
-                <p class="ms-5 me-5">Computer Engineer with a passion for building efficient, scalable web applications and end-to-end
+                <p class="ms-5 me-5">Computer Engineer with a passion for building efficient, scalable web applications
+                  and end-to-end
                   solutions.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Web Application Development, API Integration, Database Design, DevOps</p>
@@ -177,7 +252,8 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Ruchita Sharnagat</h3>
 
-                <p class="ms-5 me-5">Dedicated to crafting seamless user experiences and building robust backend systems with modern
+                <p class="ms-5 me-5">Dedicated to crafting seamless user experiences and building robust backend systems
+                  with modern
                   technologies.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Full-Stack Web Development, REST API Design, Agile Practices,
@@ -203,13 +279,14 @@
               <div class="flip-card-back">
                 <h3 class="mt-4">Kalyani Sharnagat</h3>
 
-                <p class="ms-5 me-5">Innovative developer with a focus on creating efficient, scalable, and user-centric web applications.
+                <p class="ms-5 me-5">Innovative developer with a focus on creating efficient, scalable, and user-centric
+                  web applications.
                 </p>
                 <hr>
                 <p><strong>Expertise:</strong> End-to-End Web Development, System Design, Version Control, Agile
                   Development</p>
                 <p><strong>Education:</strong> B.Tech – Computer Science</p>
-                <p ><strong>Skills:</strong> HTML, CSS, JavaScript, React.js, Node.js, Express, SQL, GitHub, Docker</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, React.js, Node.js, Express, SQL, GitHub, Docker</p>
               </div>
             </div>
           </div>
@@ -227,12 +304,14 @@
               </div>
               <div class="flip-card-back">
                 <h3 class="mt-4">Sharvari Malve</h3>
-                <p class="ms-5 me-5">Passionate software engineer skilled in building full-stack solutions with a strong emphasis on
+                <p class="ms-5 me-5">Passionate software engineer skilled in building full-stack solutions with a strong
+                  emphasis on
                   performance and accessibility.</p>
                 <hr>
                 <p><strong>Expertise:</strong> Full-Stack Development, UI/UX Design, DevOps, Agile Methodology</p>
                 <p><strong>Education:</strong> B.E. – Information Technology</p>
-                <p class="ms-5 me-5 mb-5"><strong>Skills:</strong> HTML, CSS, JavaScript, Angular, Node.js, MongoDB, Git.
+                <p class="ms-5 me-5 mb-5"><strong>Skills:</strong> HTML, CSS, JavaScript, Angular, Node.js, MongoDB,
+                  Git.
                 </p>
               </div>
             </div>
@@ -240,28 +319,77 @@
         </div>
 
 
-        
+
       </div>
     </div>
   </div>
 
-    <div class="container-fluid my-4   style">
-        <div class="row align-items-center">
-             <div class="col-md-6 ">
-            <h1 class= "display-4 fw-bold h1"></h1>
-            <p class="custom-btn1 btn-lg p-3 ms-5 text-center" type="button">Connect</p>
-            <p class="h1 ms-5">Empowering hand  <img src="/PUBLIC/hand-icon.png"> through expertise: your go-to friendly tech partner & hands on experience.
-                  </p>      
-        </div>
-             <div class="col-md-6">
-            <img src="/PUBLIC/ourpractice-service.png" width="600"  class="img-fluid">
-        </div>
-         <p class="container-fluid h5 text-center mb-5">At RIGHT SERVE INFOTECH SYSTEMS PVT. LTD., our team of skilled professionals drives innovation and excellence. Each member brings unique expertise and a collaborative spirit, ensuring we deliver outstanding results. Together, we are dedicated to pushing boundaries and achieving success for our clients.</p>
-       </div>
-       <!-- <p class="container-fluid h5 text-center">At RIGHT SERVE INFOTECH SYSTEMS PVT. LTD., our team of skilled professionals drives innovation and excellence. Each member brings unique expertise and a collaborative spirit, ensuring we deliver outstanding results. Together, we are dedicated to pushing boundaries and achieving success for our clients.</p> -->
+  <div class="container-fluid my-4   style">
+    <div class="row align-items-center">
+      <div class="col-md-6 ">
+        <h1 class="display-4 fw-bold h1"></h1>
+        <p class="custom-btn1 btn-lg p-3 ms-5 text-center" type="button">Connect</p>
+        <p class="h1 ms-5">Empowering hand <img src="/PUBLIC/hand-icon.png"> through expertise: your go-to friendly tech
+          partner & hands on experience.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="/PUBLIC/ourpractice-service.png" width="600" class="img-fluid">
+      </div>
+      <p class="container-fluid h5 text-center mb-5">At RIGHT SERVE INFOTECH SYSTEMS PVT. LTD., our team of skilled
+        professionals drives innovation and excellence. Each member brings unique expertise and a collaborative spirit,
+        ensuring we deliver outstanding results. Together, we are dedicated to pushing boundaries and achieving success
+        for our clients.</p>
     </div>
+    <!-- <p class="container-fluid h5 text-center">At RIGHT SERVE INFOTECH SYSTEMS PVT. LTD., our team of skilled professionals drives innovation and excellence. Each member brings unique expertise and a collaborative spirit, ensuring we deliver outstanding results. Together, we are dedicated to pushing boundaries and achieving success for our clients.</p> -->
+  </div>
 
   </div>
+  <footer class="custom-footer text-white">
+    <div class="container py-5">
+      <h4 class="text-center mb-4 fw-bold">Follow us on social</h4>
+      <div class="social-icons text-center mb-5">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <img src="/PUBLIC/logo_nav-removebg-preview (3).png" alt="Logo" width="150" />
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Who We Are</h6>
+          <ul class="list-unstyled">
+            <li><a href="/HTML/service.html">Services</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+            <li><a href="/HTML/team.html">Teams</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Products</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">All Industries</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Equipment</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center mt-4">
+        <p class="mb-0 text-dark">&copy; Right Serve Infotech Systems 2025</p>
+      </div>
+    </div>
+  </footer>
   <script src="/JS/script.js"></script>
 </body>
 
