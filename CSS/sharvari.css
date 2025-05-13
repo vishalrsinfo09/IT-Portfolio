@@ -1,7 +1,16 @@
 * {
+  font-family: 'Playfair Display', sans-serif;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #90b0e2;
 }
 
 .text-center {
@@ -11,11 +20,6 @@
 
 .div {
   display: flex;
-}
-
-body {
-  background-color: #90b0e2;
-  /* padding-top: 150px; */
 }
 
 .style2 {

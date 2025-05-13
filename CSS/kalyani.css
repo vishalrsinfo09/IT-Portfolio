@@ -1,13 +1,17 @@
-/* ...................................service page changes .....................................*/
 * {
   font-family: 'Playfair Display', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 
-    body{
-      background-color:  #90b0e2;
-      font-family: 'Playfair Display', sans-serif;
-    } */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .service-text {
   font-size: 90px;
   font-weight: bolder;
@@ -54,9 +58,6 @@
   height: 60px;
 }
 
-/* service page end */
-
-/* ......................................team page start....................................... */
 .flip-card {
   background-color: transparent;
   width: 100%;
