@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     status.style.color = "red";
     status.textContent = "";
 
-    if (!name || !email || !emailPattern.test(email) || !phone || isNaN(phone) || phone.length < 10 || !message) {
+    if (!name || !email || !emailPattern.test(email) || !phone || isNaN(phone) || phone.length <=10 || !message) {
       status.textContent = "❌ Submission failed: Please fill out all fields correctly.";
       return;
     }

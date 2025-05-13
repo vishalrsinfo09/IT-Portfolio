@@ -506,3 +506,10 @@ footer h5 {
 .bg_color {
   background-color: #00246b !important;
 }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
