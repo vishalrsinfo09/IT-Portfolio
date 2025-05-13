@@ -11,6 +11,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: #90b0e2;
+  /* padding-top: 100px; */
 }
 
 .text-center {
@@ -422,8 +423,8 @@ button:hover {
 }
 
 .nav-link-custom {
-  font-weight: 600;
-  color: #00246b;
+  font-weight: 600 !important;
+  color: #00246b !important;
   padding: 0.5rem 1rem;
   position: relative;
   transition: color 0.3s ease;
@@ -505,4 +506,11 @@ footer h5 {
 
 .bg_color {
   background-color: #00246b !important;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 194px;
+    height: 100px;
+  }
 }
