@@ -22,10 +22,10 @@ window.onload = () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateCounter("count1", 250);
+                animateCounter("count1", 320);
                 animateCounter("count2", 80);
-                animateCounter("count3", 250);
-                animateCounter("count4", 75);
+                animateCounter("count3", 420);
+                animateCounter("count4", 500);
                 observer.unobserve(entry.target); 
             }
         });
