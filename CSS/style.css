@@ -5,10 +5,17 @@
 
 }
 
-body {
+* {
   font-family: 'Playfair Display', sans-serif;
   scroll-behavior: smooth;
-  color: #00246b;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .custom {
@@ -280,4 +287,9 @@ footer h5 {
 
 .btn-primary:hover {
   background-color: #0056b3;
+@media (max-width: 768px) {
+  .your-element {
+    width: 100%;
+  }
+}
 }
