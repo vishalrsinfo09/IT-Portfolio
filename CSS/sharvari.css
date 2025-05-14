@@ -11,12 +11,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: #90b0e2;
+  /* padding-top: 100px; */
 }
 
-.text-center {
-  color: rgb(3, 3, 51);
-  ;
-}
 
 .div {
   display: flex;
@@ -422,8 +419,8 @@ button:hover {
 }
 
 .nav-link-custom {
-  font-weight: 600;
-  color: #00246b;
+  font-weight: 600 !important;
+  color: #00246b !important;
   padding: 0.5rem 1rem;
   position: relative;
   transition: color 0.3s ease;
@@ -446,6 +443,25 @@ button:hover {
 
 .nav-link-custom:hover::after {
   width: 100%;
+}
+
+.nav-link.active {
+  color: #00246b !important;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #1b263b, #415a77);
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
 }
 
 .navbar-toggler {
@@ -505,4 +521,11 @@ footer h5 {
 
 .bg_color {
   background-color: #00246b !important;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 194px;
+    height: 100px;
+  }
 }
