@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 html,
@@ -101,8 +101,8 @@ textarea:focus {
 }
 
 .input-block-5:hover {
-  background-color:#00246b;
-  color:white;
+  background-color: #00246b;
+  color: white;
 }
 
 .footer-block {
@@ -221,6 +221,7 @@ textarea {
     flex-direction: column;
     align-items: stretch;
   }
+
   .subscribe-form .form-control {
     width: 100%;
     margin-bottom: 10px;
@@ -341,7 +342,7 @@ button:hover {
   bottom: 0px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(to right, #1b263b, #415a77);
   border-radius: 2px;
   transition: width 0.3s ease-in-out;
@@ -423,4 +424,27 @@ footer h5 {
     border-radius: 2px;
     transition: width 0.3s ease-in-out;
   }
+}
+
+.form_focus {
+  border: 2px solid #0000009a !important;
+  box-shadow: none;
+}
+
+.form_focus:focus {
+  border-color: #2d5899;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #213488;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+i {
+  min-width: 25px;
 }
