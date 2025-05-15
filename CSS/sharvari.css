@@ -542,6 +542,12 @@ footer h5 {
   }
 }
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 @media (max-width: 576px) {
   .navbar-brand img {
     max-width: 194px;
