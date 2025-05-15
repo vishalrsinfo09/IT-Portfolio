@@ -456,11 +456,7 @@ button:hover {
 .nav-link.active::after {
   content: '';
   position: absolute;
-<<<<<<< HEAD
   bottom: 0px;
-=======
-  /* bottom: -5px; */
->>>>>>> 27ffb4d2705d478fe3e177f0de95e9f086d54d42
   left: 0;
   width: 100%;
   height: 2px;
