@@ -228,9 +228,13 @@ footer h5 {
     align-items: stretch;
   }
 
-  .subscribe-btn,
-  .subscribe_decor {
-    max-width: 100%;
-    width: 100%;
+  .subscribe_decor{
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .subscribe-btn {
+    width: 50%;
+    margin: auto;
   }
 }
