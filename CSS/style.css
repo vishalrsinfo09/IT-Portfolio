@@ -156,7 +156,6 @@ section.bg-primary {
   letter-spacing: 1px;
   color: #ffffff;
   background: #90b0e2;
-  ;
   border-radius: 0;
 }
 
@@ -336,3 +335,19 @@ footer h5 {
     text-overflow: ellipsis;
   }
 }
+
+
+
+/* .col-12:nth-child(2){
+   flex-basis: 15%;
+   padding-left:20px;
+}
+.col-12:nth-child(3) {
+  flex-basis: 20%;
+  padding-left: 70px;
+}
+
+.col-12:nth-child(4){
+ flex-basis:10%;
+ padding-left:80px;
+} */
