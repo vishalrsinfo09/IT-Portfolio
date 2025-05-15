@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 html,
@@ -82,13 +82,6 @@ body {
 }
 
 
-input:focus,
-textarea:focus {
-  border-color: #90b0e2;
-  box-shadow: 0 0 5px rgb(3, 3, 51);
-}
-
-
 .input-block-5 {
   background-color: #90b0e2;
   color: #00246b;
@@ -101,8 +94,8 @@ textarea:focus {
 }
 
 .input-block-5:hover {
-  background-color:#00246b;
-  color:white;
+  background-color: #00246b;
+  color: white;
 }
 
 .footer-block {
@@ -143,63 +136,9 @@ textarea:focus {
   border-radius: 30px;
 }
 
-.form-control {
-  height: 40px;
-  font-size: 15px;
-  border-radius: 0px;
-  padding-right: 0;
-  padding-left: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 2px solid rgb(3, 3, 51);
-  ;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
-  transition: 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #90b0e2;
-  ;
-  box-shadow: 0 0 5px rgb(3, 3, 51);
-  ;
-}
-
-textarea {
-  resize: vertical;
-  height: 120px;
-  color: rgb(3, 3, 51);
-  ;
-}
-
 .contact-map {
   border: 10px solid #90b0e2;
   border-radius: 30px;
-}
-
-
-.form-control {
-  height: 40px;
-  font-size: 15px;
-  border-radius: 0px;
-  padding-right: 0;
-  padding-left: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
 }
 
 /* Responsive Fixes */
@@ -221,6 +160,7 @@ textarea {
     flex-direction: column;
     align-items: stretch;
   }
+
   .subscribe-form .form-control {
     width: 100%;
     margin-bottom: 10px;
@@ -341,7 +281,7 @@ button:hover {
   bottom: 0px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(to right, #1b263b, #415a77);
   border-radius: 2px;
   transition: width 0.3s ease-in-out;
@@ -423,4 +363,28 @@ footer h5 {
     border-radius: 2px;
     transition: width 0.3s ease-in-out;
   }
+}
+
+.form_focus {
+  border: 2px solid #0000009a !important;
+  box-shadow: none;
+}
+
+.form_focus:focus {
+  border-color: #2d5899;
+  outline: 0;
+  border: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: #213488;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+i {
+  min-width: 25px;
 }
