@@ -66,8 +66,8 @@ body {
 
 .contact-form-block {
   background-color: #dce7f7;
-  width: 1000px;
-  max-width: 90%;
+  width: 100000px;
+  max-width: 100%;
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
