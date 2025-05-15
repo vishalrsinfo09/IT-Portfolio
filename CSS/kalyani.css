@@ -51,7 +51,18 @@ body {
   border-color: #b82727;
   color: #b82727;
 }
-
+.ourpractice-connect-button{
+  margin-top: 80px;
+  background-color: #90b0e2;
+  font-size: large;
+  border-radius: 30px;
+  color: rgb(3, 3, 51);
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  padding-top: 9px;
+  text-decoration: none;
+}
 
 
 
@@ -102,8 +113,10 @@ body {
   transform: rotateY(180deg);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: justify;
+  /* box-sizing: border-box; */
+  text-align:center;
 }
+
 
 .flip-card img {
   width: 100%;
@@ -290,4 +303,21 @@ footer h5 {
     border-radius: 2px;
     transition: width 0.3s ease-in-out;
   }
+}
+
+
+
+@media (max-width: 375px) {
+  .flip-card-inner {
+    text-align: center;
+    height: 80%;
+  
+  }
+  .flip-card img{
+     width: 50%;
+     height: 50%;
+     border-radius: 50px;
+     text-align: justify;
+  }
+  
 }
