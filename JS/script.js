@@ -39,7 +39,7 @@ window.onload = () => {
 
 
 AOS.init();
-
+    
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     const status = document.getElementById("form-status");
@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //       e.preventDefault();
 //       const email = emailInput.value;
 //       const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
 
 //       if (emailRegex.test(email)) {
 //         errorMessage.textContent = '';
