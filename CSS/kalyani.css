@@ -211,10 +211,10 @@ body {
 .nav-link.active::after {
   content: '';
   position: absolute;
-  /* bottom: -5px; */
+  bottom: 0px;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(to right, #1b263b, #415a77);
   border-radius: 2px;
   transition: width 0.3s ease-in-out;
