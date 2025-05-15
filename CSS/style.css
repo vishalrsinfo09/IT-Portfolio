@@ -317,3 +317,11 @@ footer h5 {
   }
 }
 }
+
+.col-12:nth-child(2),.col-12:nth-child(3){
+flex-basis:15%;
+
+}
+.col-12{
+padding:10px;
+}
